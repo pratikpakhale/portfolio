@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: #202020;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -34,21 +34,21 @@ const StyledHeader = styled.header`
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
     props.scrollDirection === 'up' &&
-      !props.scrolledToTop &&
-      css`
-        height: var(--nav-scroll-height);
-        transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
-      `};
+    !props.scrolledToTop &&
+    css`
+      height: var(--nav-scroll-height);
+      transform: translateY(0px);
+      background-color: #333;
+      box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    `};
 
     ${props =>
     props.scrollDirection === 'down' &&
-      !props.scrolledToTop &&
-      css`
-        height: var(--nav-scroll-height);
-        transform: translateY(calc(var(--nav-scroll-height) * -1));
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    !props.scrolledToTop &&
+    css`
+      height: var(--nav-scroll-height);
+      transform: translateY(calc(var(--nav-scroll-height) * -1));
+      box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
   }
 `;
@@ -67,8 +67,8 @@ const StyledNav = styled.nav`
 
     a {
       color: var(--green);
-      width: 42px;
-      height: 42px;
+      width: 60px;
+      height: 60px;
 
       &:hover,
       &:focus {
@@ -173,8 +173,12 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+    <a
+      className="resume-button"
+      href="https://github.com/pratikpakhale"
+      target="_blank"
+      rel="noopener noreferrer">
+      GitHub ⤴
     </a>
   );
 
