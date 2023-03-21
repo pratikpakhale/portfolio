@@ -69,7 +69,7 @@ const Hero = () => {
         <a href="https://iiitdwd.ac.in/" target="_blank" rel="noreferrer">
           IIIT Dharwad
         </a>{' '}
-        pursuing BTech in Computer Science and Engineering. I enojoy building & breaking things with
+        pursuing BTech in Computer Science and Engineering. I enjoy building & breaking things with
         JavaScript, and I also love to swim 🏊 and surf twitter 🐦.
       </p>
     </>
