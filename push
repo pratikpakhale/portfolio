@@ -1,4 +1,7 @@
+
+MESSAGE=${1:-"auto push"}
+
 yarn build
 git add .
-git commit -m $1
+git commit -m $MESSAGE
 git push
