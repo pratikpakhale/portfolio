@@ -134,6 +134,7 @@ const About = () => {
     'Python',
     'C',
     'C++',
+    'Docker',
   ];
 
   return (
@@ -144,7 +145,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi! My name is Pratik, I have been goofing around programming when I was 14 years old. Since
+              Hi! My name is Pratik, I started goofing around with programming when I was 14 years old. Since
               then I have been working on various projects and learning new technologies.
             </p>
 
