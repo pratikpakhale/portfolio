@@ -5,11 +5,3 @@ echo "deleted public folder"
 echo "building..."
 yarn build
 echo "build complete"
-sleep 2
-echo "pushing to github..."
-git add .
-echo "added all files"
-git commit -m $MESSAGE
-echo "commit complete"
-git push
-echo "push complete"

@@ -2,7 +2,7 @@
 date: '2022-07-14'
 title: 'Tweemarks'
 github: 'https://github.com/pratikpakhale/tweemarks-v2'
-external: ''
+external: 'tweemarks.netlify.app'
 tech:
   - HTML CSS JS
   - TwitterAPI
@@ -11,4 +11,4 @@ company: ''
 showInProjects: true
 ---
 
-A simple python script that follows people who follow a specific user on Twitter. 
+A Twitter bookmarking tool!
