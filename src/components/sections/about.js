@@ -135,6 +135,7 @@ const About = () => {
     'C',
     'C++',
     'Docker',
+    'GitHub Actions',
   ];
 
   return (
