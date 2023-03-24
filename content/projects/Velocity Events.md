@@ -14,4 +14,4 @@ ios: false
 android: false
 ---
 
-Velocity Events!
+The complete event management website for club events from registering to ticketing. 100k API Calls since built.

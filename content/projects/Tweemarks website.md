@@ -2,7 +2,7 @@
 date: '2022-07-14'
 title: 'Tweemarks'
 github: 'https://github.com/pratikpakhale/tweemarks-v2'
-external: 'tweemarks.netlify.app'
+external: 'https://tweemarks.netlify.app'
 tech:
   - HTML CSS JS
   - TwitterAPI
@@ -11,4 +11,4 @@ company: ''
 showInProjects: true
 ---
 
-A Twitter bookmarking tool!
+A Twitter bookmarking tool powered with a Telegram Bot!

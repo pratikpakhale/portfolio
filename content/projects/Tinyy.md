@@ -13,4 +13,5 @@ ios: false
 android: false
 ---
 
-tiNyy - URL Shortner Web API
+tiNyy provides a short URL of long links and makes them easy to share!
+For Developers, one can also use the API without any auth key. 

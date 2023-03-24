@@ -6,8 +6,9 @@ external: 'tweemarks.netlify.app'
 tech:
   - Python
   - TwitterAPI
+  - Selenium
 company: ''
 showInProjects: true
 ---
 
-A simple python script that follows people who follow a specific user on Twitter. 
+A simple python script that geneartes accounts and follows the specified user on twitter.

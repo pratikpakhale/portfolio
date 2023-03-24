@@ -12,4 +12,4 @@ ios: false
 android: false
 ---
 
-Minesweeper!
+Minesweeper Application!

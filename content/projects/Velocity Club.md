@@ -12,4 +12,4 @@ ios: false
 android: false
 ---
 
-Velocity Website.
+Official Velocity Club Website.

@@ -11,4 +11,4 @@ company: ''
 showInProjects: false
 ---
 
-Secret Chats!
+Secret Chats is a platform for you to chat with people anonymously! It's a device specific website so only this device can access chats of this device!

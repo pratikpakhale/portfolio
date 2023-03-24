@@ -1,5 +1,4 @@
 
-MESSAGE=${1:-"auto push"}
 rm -rf ./public
 echo "deleted public folder"
 echo "building..."
