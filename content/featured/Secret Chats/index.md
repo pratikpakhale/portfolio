@@ -1,9 +1,9 @@
 ---
-date: '3'
+date: '4'
 title: 'Secret Chats'
 cover: './shot.png'
 github: 'https://github.com/pratikpakhale/secret-chats'
-external: 'http://secretchats.ml/'
+external: 'https://secretchats-ml.netlify.app/'
 tech:
   - React
   - Firebase

@@ -33,22 +33,22 @@ const StyledHeader = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
-    props.scrollDirection === 'up' &&
-    !props.scrolledToTop &&
-    css`
-      height: var(--nav-scroll-height);
-      transform: translateY(0px);
-      background-color: #333;
-      box-shadow: 0 10px 30px -10px var(--navy-shadow);
-    `};
+      props.scrollDirection === 'up' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(0px);
+        background-color: #333;
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      `};
 
     ${props =>
-    props.scrollDirection === 'down' &&
-    !props.scrolledToTop &&
-    css`
-      height: var(--nav-scroll-height);
-      transform: translateY(calc(var(--nav-scroll-height) * -1));
-      box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      props.scrollDirection === 'down' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(calc(var(--nav-scroll-height) * -1));
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
   }
 `;
@@ -137,7 +137,6 @@ const Nav = ({ isHome }) => {
     setScrolledToTop(window.pageYOffset < 50);
   };
 
-
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
@@ -174,12 +173,8 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a
-      className="resume-button"
-      href="https://github.com/pratikpakhale"
-      target="_blank"
-      rel="noopener noreferrer">
-      GitHub ⤴
+    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume ⤴
     </a>
   );
 
