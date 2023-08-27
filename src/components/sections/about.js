@@ -146,13 +146,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi! My name is Pratik, I started goofing around with programming when I was 14 years old. Since
-              then I have been working on various projects and learning new technologies.
+              Hi! My name is Pratik, I started goofing around with programming when I was 14 years
+              old. Since then I have been working on various projects and learning new technologies.
             </p>
 
             <p>
-              I am the Vice President of the development club{' '}
-              <a href="https://velocityevents.live">Velocity</a> at my Institute and one of the few <a href="https://postman.com">Postman</a> Student Leaders across the globe.
+              I am working as a research intern at IIT Bombay and I am the President of Club
+              <a href="https://velocityclub.live">Velocity</a> at my Institute and one of the few{' '}
+              <a href="https://postman.com">Postman</a> Student Leaders across the globe.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
