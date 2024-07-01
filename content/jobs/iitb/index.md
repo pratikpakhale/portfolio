@@ -1,5 +1,5 @@
 ---
-date: '2023-07-15'
+date: '2024-04-15'
 title: 'Research Intern'
 company: 'IIT Bombay'
 location: 'Hybrid'
