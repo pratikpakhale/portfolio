@@ -8,7 +8,7 @@ tech:
   - Node/ExpressJS
   - TailwindCSS
 company: ''
-showInProjects: true
+showInProjects: false
 ios: false
 android: false
 ---

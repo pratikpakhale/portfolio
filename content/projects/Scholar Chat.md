@@ -7,8 +7,9 @@ tech:
   - ReactJS
   - Node/ExpressJS
 company: ''
-showInProjects: true
+showInProjects: false
 ios: false
 android: false
 ---
+
 Major Contribution in optimizing, improving security and building a structured OAuth flow of Scholar Chat - A platform for researchers to connect and chat with their orcid.

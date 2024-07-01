@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'Clash Of CSS'
 cover: './shot.png'
 github: 'https://github.com/pratikpakhale/css-battles-frontend'

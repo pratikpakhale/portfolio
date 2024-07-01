@@ -8,7 +8,7 @@ tech:
   - Firebase
   - TwitterAPI
 company: ''
-showInProjects: true
+showInProjects: false
 ---
- 
+
 The powerful telegram bot which lets you save your tweets and access them anywhere.

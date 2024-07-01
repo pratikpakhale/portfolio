@@ -11,4 +11,4 @@ company: ''
 showInProjects: true
 ---
 
-A Twitter bookmarking tool powered with a Telegram Bot!
+A powerful Twitter bookmarking tool powered with a Telegram Bot! Currently taken down due to Twitter API pricing policy.

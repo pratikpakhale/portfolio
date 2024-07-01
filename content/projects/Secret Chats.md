@@ -8,7 +8,7 @@ tech:
   - Firebase Realtime
   - TailwindCSS
 company: ''
-showInProjects: false
+showInProjects: true
 ---
 
-Secret Chats is a platform for you to chat with people anonymously! It's a device specific website so only this device can access chats of this device!
+Secret Chats is a platform for you to chat with people anonymously! It's a device specific website so only a device can access chats of that particular device!

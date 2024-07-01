@@ -13,4 +13,4 @@ ios: false
 android: false
 ---
 
-WON the Postman Go w/ the Flow hackathon for building a flow that generates a pie chart of the characteristics of your top tracks from Spotify and tweets it on your behalf.
+WON the [Postman Go w/ the Flow hackathon](https://blog.postman.com/postman-go-with-the-flows-hackathon-winners/) for building a flow that generates a pie chart of the characteristics of your top tracks from Spotify and tweets it on your behalf.

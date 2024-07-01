@@ -70,7 +70,7 @@ const Hero = () => {
           IIIT Dharwad
         </a>{' '}
         pursuing BTech in Computer Science and Engineering. I enjoy building & breaking things with
-        JavaScript, and I also love to swim 🏊 and surf twitter 🐦.
+        JavaScript (usually), while I also love to swim 🏊 and surf twitter 🐦.
       </p>
     </>
   );
@@ -80,7 +80,7 @@ const Hero = () => {
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, four, five];
 
   return (
     <StyledHeroSection>

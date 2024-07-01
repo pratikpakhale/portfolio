@@ -130,12 +130,14 @@ const About = () => {
     'TypeScript',
     'React/Next',
     'Java',
+    'R',
     'Node.js',
     'Python',
     'C',
     'C++',
     'Docker',
     'GitHub Actions',
+    'DevOps',
   ];
 
   return (
@@ -151,9 +153,15 @@ const About = () => {
             </p>
 
             <p>
-              I am working as a research intern at IIT Bombay and I am the President of Club
-              <a href="https://velocityclub.live">Velocity</a> at my Institute and one of the few{' '}
-              <a href="https://postman.com">Postman</a> Student Leaders across the globe.
+              I am Co-Founder and CEO of <a href="https://www.devforces.in/"> DevForces </a> under
+              Quasarect Technologies LLP. I was the President of Club{' '}
+              <a href="https://iiitdwd.ac.in/clubs/#Velocity"> Velocity</a> at my Institute and one
+              of the few <a href="https://postman.com">Postman</a> Student Leaders across the globe.
+            </p>
+
+            <p>
+              Here's my most recent <a href="/resume.pdf">resume</a>, reflecting my latest
+              experiences and skills.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

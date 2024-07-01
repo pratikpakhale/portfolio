@@ -7,9 +7,9 @@ tech:
   - ReactJS
 
 company: ''
-showInProjects: false
+showInProjects: true
 ios: false
 android: false
 ---
 
-Official Velocity Club Website.
+Official Velocity Club Website. Mentored a team of 4 to build the beautiful website using ReactJS and tailwindcss.

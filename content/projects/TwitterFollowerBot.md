@@ -8,7 +8,7 @@ tech:
   - TwitterAPI
   - Selenium
 company: ''
-showInProjects: true
+showInProjects: false
 ---
 
 A simple python script that geneartes accounts and follows the specified user on twitter.

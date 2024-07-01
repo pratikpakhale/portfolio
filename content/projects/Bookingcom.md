@@ -6,12 +6,12 @@ external: 'https://gdsc-bookingcom.netlify.app/'
 tech:
   - ReactJS
   - Netlify
-  - GitHub 
+  - GitHub
   - Mentorship
 company: ''
-showInProjects: true
+showInProjects: false
 ios: false
 android: false
 ---
 
-Leading a learning project in a team of more than 10 people. The project is a clone of the Booking.com website. The project is being developed using ReactJS and Netlify. 
+Leading a learning project in a team of more than 10 people. The project is a clone of the Booking.com website. The project is being developed using ReactJS and Netlify.

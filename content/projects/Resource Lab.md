@@ -8,7 +8,7 @@ tech:
   - NotionAPI
   - OpenAI API
 company: ''
-showInProjects: true
+showInProjects: false
 ios: false
 android: false
 ---
