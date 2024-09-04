@@ -6,7 +6,7 @@ module.exports = {
     description:
       'Pratik Pakhale is an undergraduate student at IIIT Dharwad pursuing BTech in Computer Science and Engineering. He enojoy building & breaking things with JavaScript, and he also love to swim 🏊 and surf twitter 🐦.',
     siteUrl: 'https://pratikpakhale.tech', // no trailing slash
-    image: 'og.png', // Path to your image you placed in the 'static' folder
+    image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@_pratikpakhale',
   },
   plugins: [
