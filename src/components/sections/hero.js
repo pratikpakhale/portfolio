@@ -65,7 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I am an undergraduate student at{' '}
+        I graduated from{' '}
         <a href="https://iiitdwd.ac.in/" target="_blank" rel="noreferrer">
           IIIT Dharwad
         </a>{' '}
