@@ -1,0 +1,14 @@
+name: "Your Name"
+title: "Engineer"
+tagline: >
+  Engineer who builds things — distributed systems at work,
+  3D-printed gadgets at home, research papers in between.
+links:
+  - label: github
+    url: "#"
+  - label: linkedin
+    url: "#"
+  - label: resume.pdf
+    url: "#"
+  - label: email
+    url: "#"

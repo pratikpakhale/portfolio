@@ -1,0 +1,14 @@
+bridge: "For fun, I make things that <em>make me laugh</em>."
+
+items:
+  - name: "Multiplayer ASCII dungeon"
+    description: "Terminal roguelike, WebSocket, one weekend"
+
+  - name: "IRC bot with personality"
+    description: "Markov chains, became most popular member"
+
+  - name: "Pixel art editor in 1KB"
+    description: "JS1K entry, 16 colors, canvas"
+
+  - name: "Chess engine in Bash"
+    description: "Terrible at chess, great at parties"

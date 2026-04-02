@@ -1,0 +1,18 @@
+bridge: "And sometimes I build things <em>I can hold</em>."
+
+builds:
+  - name: "Custom macro pad"
+    description: "Split ergo keypad. QMK firmware. Resin-printed case, Fusion 360."
+    image: null
+
+  - name: "PCB motor controller"
+    description: "4-layer ESC board, STM32, FOC control. KiCad, hand-assembled."
+    image: null
+
+  - name: "GPS cat tracker"
+    description: "ESP32 + LoRa collar. 3D-printed waterproof case. Self-hosted map."
+    image: null
+
+  - name: "Mechanical numpad"
+    description: "CNC aluminum, hot-swap PCB, custom firmware. Made 10 for friends."
+    image: null

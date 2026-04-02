@@ -1,0 +1,17 @@
+bridge: "And I try to <em>give back</em>."
+
+items:
+  - name: "osquery"
+    url: "#"
+    role: "Added Linux eBPF event support. 3 PRs merged."
+    period: "2023"
+
+  - name: "CodeBridge mentor"
+    url: null
+    role: "Teaching web dev to underserved high schoolers. 12 students shipped first sites."
+    period: "2022 — now"
+
+  - name: "react-table"
+    url: "#"
+    role: "Fixed column resize edge case. Docs contribution."
+    period: "2021"

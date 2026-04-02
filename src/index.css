@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bg: #faf8f4;
+  --color-raised: #f1eeea;
+  --color-subtle: #e9e5df;
+  --color-text: #1a1918;
+  --color-muted: #6b6862;
+  --color-dim: #a8a49c;
+  --color-accent: #9b7a2f;
+  --color-accent-light: #c9a85c;
+  --color-accent-bg: #f5f0e2;
+  --color-border: #ddd9d1;
+  --color-green: #4a7a45;
+  --color-red: #a85454;
+}
+
+.dark {
+  --color-bg: #141311;
+  --color-raised: #1e1c19;
+  --color-subtle: #2a2723;
+  --color-text: #e8e5df;
+  --color-muted: #9b9790;
+  --color-dim: #5f5b54;
+  --color-accent: #c9a85c;
+  --color-accent-light: #dfc07a;
+  --color-accent-bg: #2a2417;
+  --color-border: #302d28;
+  --color-green: #6aad63;
+  --color-red: #d47272;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+::selection {
+  background: var(--color-accent-light);
+  color: #fff;
+}
+
+.dark ::selection {
+  color: #141311;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Bridge em styling */
+.bridge em {
+  color: var(--color-text);
+  font-style: normal;
+}
+
+/* Fade in animation */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,13 @@
+bridge: "I also let <em>AI write code for me</em> — and it works."
+subtitle: "Zero lines written by hand. Fully AI-generated."
+
+demos:
+  - name: "AI recipe generator"
+    url: "recipe-from-fridge.app"
+    note: "2k users/mo · react + claude api"
+    image: null
+
+  - name: "PDF invoice parser"
+    url: "invoice-parser.tool"
+    note: "saves 5 hrs/wk · tesseract + regex"
+    image: null

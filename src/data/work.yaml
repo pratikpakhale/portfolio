@@ -1,0 +1,44 @@
+bridge: "I've spent the last few years <em>shipping production systems</em> at places that let me own real problems."
+
+positions:
+  - hash: "HEAD"
+    date: "2023 — present"
+    title: "Senior Engineer"
+    company: "Acme Corp · Platform team"
+    diff:
+      - type: plus
+        text: "Led migration to event-driven architecture — 40% latency reduction"
+      - type: plus
+        text: "Redesigned ingestion pipeline — 3x throughput"
+      - type: plus
+        text: "Shipped real-time analytics dashboard, 200+ internal users"
+      - type: plus
+        text: "Mentored 4 junior engineers through first production services"
+      - type: minus
+        text: "Killed the legacy monolith batch processor"
+
+  - hash: "a7f3e2d"
+    date: "2021 — 2023"
+    title: "Backend Engineer"
+    company: "StartupXYZ · Employee #8"
+    diff:
+      - type: plus
+        text: "Built payment infra from scratch — $2M+/month processed"
+      - type: plus
+        text: "Stripe integration with retry logic and idempotency"
+      - type: plus
+        text: "On-call incidents: 12/week → 2/week"
+      - type: minus
+        text: "Deprecated three unmaintained internal tools"
+
+  - hash: "1b04c9a"
+    date: "2020"
+    title: "Software Engineering Intern"
+    company: "BigTechCo · Infrastructure"
+    diff:
+      - type: plus
+        text: "Built CLI tool adopted by 50+ engineers"
+      - type: plus
+        text: "Saved ~30 min per release cycle"
+      - type: plus
+        text: "Return offer received"

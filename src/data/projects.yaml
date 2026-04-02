@@ -1,0 +1,20 @@
+bridge: "When I'm not at work, I build <em>tools I wish existed</em>."
+
+items:
+  - name: "API testing CLI"
+    url: "#"
+    year: "2024"
+    tag: "rust"
+    description: "HTTP client with chained requests and assertions. Built because Postman was too heavy for CI. 500+ GitHub stars."
+
+  - name: "Distributed task queue"
+    url: "#"
+    year: "2023"
+    tag: "go"
+    description: "Lightweight job queue with Redis backend and at-least-once delivery. Used in production at two companies."
+
+  - name: "Static site compiler"
+    url: "#"
+    year: "2022"
+    tag: "typescript"
+    description: "Markdown + JSX to plain HTML. No hydration, no runtime, sub-50ms builds."
