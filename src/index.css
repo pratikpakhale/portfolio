@@ -67,6 +67,10 @@ a {
   transition: all 0.2s;
 }
 
+nav a {
+  border-bottom: none;
+}
+
 a:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
