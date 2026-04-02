@@ -39,7 +39,7 @@ export function SideQuests() {
           ))}
 
           {hiddenCount > 0 && (
-            <div className="border-t border-border pt-5 flex items-center justify-between">
+            <div className="pt-2 flex items-center justify-between">
               <button
                 onClick={() => setShowAll(!showAll)}
                 className="font-sans text-sm text-muted hover:text-accent transition-colors cursor-pointer"

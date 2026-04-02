@@ -22,7 +22,7 @@ export function SectionFooter({
 
   return (
     <div
-      className={`border-t border-border pt-5 flex items-center justify-between ${className ?? ""}`}
+      className={`pt-2 flex items-center justify-between ${className ?? ""}`}
     >
       <button
         onClick={onToggle}
