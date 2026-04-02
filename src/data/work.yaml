@@ -42,3 +42,27 @@ positions:
         text: "Saved ~30 min per release cycle"
       - type: plus
         text: "Return offer received"
+
+  - hash: "e4b82f1"
+    date: "2019 — 2020"
+    title: "Full-Stack Developer"
+    company: "Freelance · Various clients"
+    diff:
+      - type: plus
+        text: "Delivered 8 client projects across e-commerce, SaaS, and healthcare"
+      - type: plus
+        text: "Built a booking platform handling 500+ daily reservations"
+      - type: minus
+        text: "Sunset a legacy WordPress multisite network"
+
+  - hash: "0c3a91d"
+    date: "2018 — 2019"
+    title: "Junior Developer"
+    company: "LocalAgency · Web team"
+    diff:
+      - type: plus
+        text: "Shipped responsive redesign for 12 client sites"
+      - type: plus
+        text: "Introduced component library — cut dev time by 35%"
+      - type: plus
+        text: "First production deploy on day three"

@@ -20,3 +20,23 @@ papers:
         url: "#"
       - label: arxiv
         url: "#"
+
+  - authors: "Your Name, C. Park, R. Kumar."
+    title: "Retrieval-augmented generation for domain-specific QA systems."
+    venue: "EMNLP Industry Track, 2023."
+    links:
+      - label: pdf
+        url: "#"
+      - label: code
+        url: "#"
+
+  - authors: "Your Name, M. Chen."
+    title: "Low-rank adapters for multilingual code generation."
+    venue: "Workshop on Code LLMs, 2024."
+    links:
+      - label: pdf
+        url: "#"
+      - label: arxiv
+        url: "#"
+      - label: code
+        url: "#"

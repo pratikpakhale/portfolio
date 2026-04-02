@@ -6,6 +6,7 @@ import { Research } from "@/components/Research";
 import { Hardware } from "@/components/Hardware";
 import { Vibecoded } from "@/components/Vibecoded";
 import { Fun } from "@/components/Fun";
+import { SideQuests } from "@/components/SideQuests";
 import { Oss } from "@/components/Oss";
 import { Footer } from "@/components/Footer";
 import { PixelBuddy } from "@/components/PixelBuddy";
@@ -27,6 +28,7 @@ export default function App() {
       <Hardware />
       <Vibecoded />
       <Fun />
+      <SideQuests />
       <Oss />
       <Footer />
     </>

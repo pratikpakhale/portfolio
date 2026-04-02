@@ -15,3 +15,18 @@ items:
     url: "#"
     role: "Fixed column resize edge case. Docs contribution."
     period: "2021"
+
+  - name: "Kubernetes docs"
+    url: "#"
+    role: "Rewrote networking troubleshooting guide. 50+ edits merged."
+    period: "2022"
+
+  - name: "Local hackathon organizer"
+    url: null
+    role: "Ran 3 weekend hackathons for college students. 200+ participants total."
+    period: "2020 — 2022"
+
+  - name: "eslint-plugin-a11y"
+    url: "#"
+    role: "Added rules for ARIA live region misuse. 2 PRs merged."
+    period: "2023"

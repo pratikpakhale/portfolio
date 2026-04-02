@@ -1,0 +1,14 @@
+bridge: "Outside the editor, I collect <em>side quests</em>."
+
+items:
+  - name: "Hackathon win placeholder"
+    description: "Replace with your actual hack wins"
+    tag: "hack"
+
+  - name: "Club leadership placeholder"
+    description: "Replace with your actual roles"
+    tag: "lead"
+
+  - name: "Another quest placeholder"
+    description: "Replace with your actual achievements"
+    tag: "misc"

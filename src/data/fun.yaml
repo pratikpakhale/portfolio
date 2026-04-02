@@ -12,3 +12,12 @@ items:
 
   - name: "Chess engine in Bash"
     description: "Terrible at chess, great at parties"
+
+  - name: "Weather haiku bot"
+    description: "Tweets a haiku based on forecast, daily"
+
+  - name: "MIDI foot controller"
+    description: "Arduino, stomp switches, live looping"
+
+  - name: "Regex crossword solver"
+    description: "Brute-force elegance, surprisingly fast"

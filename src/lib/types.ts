@@ -87,6 +87,17 @@ export interface FunData {
   items: FunItem[];
 }
 
+export interface SideQuestItem {
+  name: string;
+  description: string;
+  tag: string;
+}
+
+export interface SideQuestsData {
+  bridge: string;
+  items: SideQuestItem[];
+}
+
 export interface OssItem {
   name: string;
   url: string | null;

@@ -18,3 +18,21 @@ items:
     year: "2022"
     tag: "typescript"
     description: "Markdown + JSX to plain HTML. No hydration, no runtime, sub-50ms builds."
+
+  - name: "Terminal dashboard"
+    url: "#"
+    year: "2022"
+    tag: "go"
+    description: "Real-time system monitor in the terminal. CPU, memory, network, disk I/O — all in one TUI."
+
+  - name: "Git bisect helper"
+    url: "#"
+    year: "2021"
+    tag: "rust"
+    description: "Automates git bisect with custom test commands. Found regressions in seconds instead of hours."
+
+  - name: "Schema diff tool"
+    url: "#"
+    year: "2021"
+    tag: "python"
+    description: "Compares database schemas across environments. Generates migration SQL automatically."

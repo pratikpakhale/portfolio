@@ -7,7 +7,8 @@ const links = [
   { href: "#hardware", num: "04", label: "hardware" },
   { href: "#vibecoded", num: "05", label: "vibecoded" },
   { href: "#fun", num: "06", label: "fun" },
-  { href: "#oss", num: "07", label: "oss" },
+  { href: "#sidequests", num: "07", label: "side quests" },
+  { href: "#oss", num: "08", label: "oss" },
 ];
 
 const sectionIds = links.map((l) => l.href.slice(1));
@@ -60,7 +61,7 @@ export function Nav() {
             key={l.href}
             href={l.href}
             aria-label={l.label}
-            className="flex items-center gap-2 !border-b-0 group"
+            className="flex items-center gap-2 border-b-0 group"
           >
             <span
               className={`font-mono text-xs transition-all duration-300 ${

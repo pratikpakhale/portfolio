@@ -11,3 +11,13 @@ demos:
     url: "invoice-parser.tool"
     note: "saves 5 hrs/wk · tesseract + regex"
     image: null
+
+  - name: "Mood-based playlist maker"
+    url: "vibequeue.app"
+    note: "300+ users · spotify api + gpt-4"
+    image: null
+
+  - name: "Meeting summarizer"
+    url: "tldr-meeting.tool"
+    note: "internal tool · whisper + claude"
+    image: null
