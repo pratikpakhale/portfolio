@@ -9,8 +9,8 @@ import { Fun } from "@/components/Fun";
 import { SideQuests } from "@/components/SideQuests";
 import { Oss } from "@/components/Oss";
 import { Footer } from "@/components/Footer";
-import { PixelBuddy } from "@/components/PixelBuddy";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { CatBuddy } from "@/components/CatBuddy";
 import { useTheme } from "@/hooks/useTheme";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
     <>
       <Nav />
       <ThemeToggle theme={theme} onToggle={toggle} />
-      <PixelBuddy theme={theme} />
+      <CatBuddy theme={theme} />
       <Hero />
       <Work />
       <Projects />
