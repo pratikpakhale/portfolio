@@ -1,42 +1,9 @@
-bridge: "Sometimes I write about <em>what I learn</em>."
+bridge: "When I slow down, I write about <em>what I learn</em>."
 
 papers:
-  - authors: "Your Name, J. Doe, A. Smith."
-    title: "Sparse attention patterns for long-document summarization."
-    venue: "Workshop on Efficient NLP, 2023."
+  - authors: "Animesh Chaturvedi, VK Vivekraj, Pratik Pakhale, Karthik Avinash."
+    title: "Vedalytics: Concepts as Knowledge from Rules of the Ancient Indian Scriptures."
+    venue: "2024 IEEE International Conference on Big Data (BigData), pp. 6967–6976."
     links:
-      - label: pdf
-        url: "#"
-      - label: arxiv
-        url: "#"
-      - label: code
-        url: "#"
-
-  - authors: "Your Name, B. Lee."
-    title: "Structured vs unstructured pruning in BERT variants."
-    venue: "Preprint, 2022."
-    links:
-      - label: pdf
-        url: "#"
-      - label: arxiv
-        url: "#"
-
-  - authors: "Your Name, C. Park, R. Kumar."
-    title: "Retrieval-augmented generation for domain-specific QA systems."
-    venue: "EMNLP Industry Track, 2023."
-    links:
-      - label: pdf
-        url: "#"
-      - label: code
-        url: "#"
-
-  - authors: "Your Name, M. Chen."
-    title: "Low-rank adapters for multilingual code generation."
-    venue: "Workshop on Code LLMs, 2024."
-    links:
-      - label: pdf
-        url: "#"
-      - label: arxiv
-        url: "#"
-      - label: code
-        url: "#"
+      - label: ieee
+        url: "https://ieeexplore.ieee.org/abstract/document/10825723/"

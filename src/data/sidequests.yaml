@@ -1,14 +1,22 @@
 bridge: "Outside the editor, I collect <em>side quests</em>."
 
 items:
-  - name: "Hackathon win placeholder"
-    description: "Replace with your actual hack wins"
-    tag: "hack"
-
-  - name: "Club leadership placeholder"
-    description: "Replace with your actual roles"
+  - name: "President — Velocity Club"
+    description: "Web & App Development Club, IIIT Dharwad"
     tag: "lead"
 
-  - name: "Another quest placeholder"
-    description: "Replace with your actual achievements"
+  - name: "Postman Global Hackathon"
+    description: "Winner"
+    tag: "hack"
+
+  - name: "Postman Student Leader"
+    description: "Student Leader at Postman"
+    tag: "lead"
+
+  - name: "Hack2Future"
+    description: "Won the first pan-India hackathon at IIIT Dharwad"
+    tag: "hack"
+
+  - name: "Buildspace N&W"
+    description: "Campus Representative, Nights & Weekends"
     tag: "misc"

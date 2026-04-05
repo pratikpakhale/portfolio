@@ -22,7 +22,7 @@ export function SideQuests() {
         data-buddy="dance"
         data-buddy-label="!!"
       >
-        <SectionHeader num="07" title="Side quests" />
+        <SectionHeader num="08" title="Side quests" />
         <div className="text-[15px] leading-[2.2]">
           {visible.map((item, i) => (
             <FadeIn

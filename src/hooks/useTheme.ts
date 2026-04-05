@@ -3,16 +3,18 @@ import { useEffect, useState, useCallback } from "react";
 type Theme = "light" | "dark";
 
 function getInitialTheme(): Theme {
-  if (typeof window === "undefined") return "light";
-  const stored = localStorage.getItem("theme") as Theme | null;
-  if (stored) return stored;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  // Theme switching disabled — locked to dark mode
+  return "dark";
+  // if (typeof window === "undefined") return "light";
+  // const stored = localStorage.getItem("theme") as Theme | null;
+  // if (stored) return stored;
+  // return window.matchMedia("(prefers-color-scheme: dark)").matches
+  //   ? "dark"
+  //   : "light";
 }
 
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [theme, _setTheme] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -24,8 +26,9 @@ export function useTheme() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // Theme toggle disabled — locked to dark mode
   const toggle = useCallback(() => {
-    setTheme((t) => (t === "light" ? "dark" : "light"));
+    // setTheme((t) => (t === "light" ? "dark" : "light"));
   }, []);
 
   return { theme, toggle } as const;

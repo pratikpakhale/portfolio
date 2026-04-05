@@ -2,13 +2,13 @@ import { useEffect, useState, useCallback } from "react";
 
 const links = [
   { href: "#work", num: "01", label: "work" },
-  { href: "#projects", num: "02", label: "projects" },
-  { href: "#research", num: "03", label: "research" },
+  { href: "#oss", num: "02", label: "oss" },
+  { href: "#projects", num: "03", label: "projects" },
   { href: "#hardware", num: "04", label: "hardware" },
-  { href: "#vibecoded", num: "05", label: "vibecoded" },
-  { href: "#fun", num: "06", label: "fun" },
-  { href: "#sidequests", num: "07", label: "side quests" },
-  { href: "#oss", num: "08", label: "oss" },
+  { href: "#fun", num: "05", label: "fun" },
+  { href: "#vibecoded", num: "06", label: "vibecoded" },
+  { href: "#research", num: "07", label: "research" },
+  { href: "#sidequests", num: "08", label: "side quests" },
 ];
 
 const sectionIds = links.map((l) => l.href.slice(1));

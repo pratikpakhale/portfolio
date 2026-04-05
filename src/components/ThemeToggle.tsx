@@ -7,6 +7,8 @@ export function ThemeToggle({
 }) {
   const isDark = theme === "dark";
 
+  // Theme toggle disabled — locked to dark mode
+  return null;
   return (
     <button
       onClick={onToggle}

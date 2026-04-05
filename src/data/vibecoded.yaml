@@ -1,23 +1,33 @@
-bridge: "I also let <em>AI write code for me</em> — and it works."
-subtitle: "Zero lines written by hand. Fully AI-generated."
+bridge: "I also let <em>AI write code for me</em> — tiny tools, vibecoded into existence."
+subtitle: "Zero hand-written lines. Prompted into existence."
 
 demos:
-  - name: "AI recipe generator"
-    url: "recipe-from-fridge.app"
-    note: "2k users/mo · react + claude api"
+  - name: "shadcn"
+    url: "https://shadcn.pakhale.com"
+    note: "browse multiple UI component registries in one place"
     image: null
 
-  - name: "PDF invoice parser"
-    url: "invoice-parser.tool"
-    note: "saves 5 hrs/wk · tesseract + regex"
+  - name: "diffs"
+    url: "https://diffs.pakhale.com"
+    note: "paste two texts, see the diff instantly"
     image: null
 
-  - name: "Mood-based playlist maker"
-    url: "vibequeue.app"
-    note: "300+ users · spotify api + gpt-4"
+  - name: "txt-pad"
+    url: "https://txt.pakhale.com"
+    note: "e2e encrypted notepad — aes-256-gcm, client-only"
     image: null
 
-  - name: "Meeting summarizer"
-    url: "tldr-meeting.tool"
-    note: "internal tool · whisper + claude"
+  - name: "mixboard"
+    url: "https://mixbread.pakhale.com"
+    note: "mixboard"
+    image: null
+
+  - name: "codex account switcher"
+    url: "https://github.com/pratikpakhale/codex-account-switcher"
+    note: "raycast extension to manage codex cli accounts"
+    image: null
+
+  - name: "jsonl-viewer"
+    url: "https://github.com/pratikpakhale/jsonl-viewer"
+    note: "fast jsonl file viewer — table & json views, search, keyboard nav"
     image: null

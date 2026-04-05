@@ -1,5 +1,4 @@
 import { FadeIn } from "./FadeIn";
-import type { BuddyFrame } from "@/hooks/useBuddyObserver";
 
 export function Bridge({
   html,
@@ -7,7 +6,7 @@ export function Bridge({
   buddyLabel = "",
 }: {
   html: string;
-  buddy?: BuddyFrame;
+  buddy?: string;
   buddyLabel?: string;
 }) {
   return (

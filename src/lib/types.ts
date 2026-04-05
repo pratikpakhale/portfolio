@@ -21,6 +21,7 @@ export interface Position {
   title: string;
   company: string;
   diff: DiffLine[];
+  story?: string;
 }
 
 export interface WorkData {
@@ -34,6 +35,9 @@ export interface Project {
   year: string;
   tag: string;
   description: string;
+  image: string | null;
+  story?: string;
+  era?: string;
 }
 
 export interface ProjectsData {
@@ -57,6 +61,8 @@ export interface Build {
   name: string;
   description: string;
   image: string | null;
+  video?: string | null;
+  thumbnail?: string | null;
 }
 
 export interface HardwareData {
@@ -80,6 +86,7 @@ export interface VibecodedData {
 export interface FunItem {
   name: string;
   description: string;
+  image: string | null;
 }
 
 export interface FunData {

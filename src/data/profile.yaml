@@ -1,14 +1,12 @@
-name: "Your Name"
+name: "Pratik Pakhale"
 title: "Engineer"
-tagline: >
-  Engineer who builds things — distributed systems at work,
-  3D-printed gadgets at home, research papers in between.
+tagline: "Most of what I build starts as 'what if I just...' at 2am."
 links:
   - label: github
-    url: "#"
+    url: "https://github.com/pratikpakhale"
   - label: linkedin
-    url: "#"
+    url: "https://www.linkedin.com/in/pratikpakhale"
   - label: resume.pdf
-    url: "#"
+    url: "https://pratik.pakhale.com/resume.pdf"
   - label: email
-    url: "#"
+    url: "mailto:pratikpakhale20@gmail.com"

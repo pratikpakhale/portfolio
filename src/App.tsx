@@ -23,13 +23,13 @@ export default function App() {
       <CatBuddy theme={theme} />
       <Hero />
       <Work />
-      <Projects />
-      <Research />
-      <Hardware />
-      <Vibecoded />
-      <Fun />
-      <SideQuests />
       <Oss />
+      <Projects />
+      <Hardware />
+      <Fun />
+      <Vibecoded />
+      <Research />
+      <SideQuests />
       <Footer />
     </>
   );

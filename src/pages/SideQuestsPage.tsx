@@ -23,7 +23,7 @@ export function SideQuestsPage() {
       </FadeIn>
 
       <section className="py-6 pb-18">
-        <SectionHeader num="07" title="Side quests" />
+        <SectionHeader num="08" title="Side quests" />
         <div className="text-[15px] leading-[2.2]">
           {sidequests.items.map((item, i) => (
             <FadeIn

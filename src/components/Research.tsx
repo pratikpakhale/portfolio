@@ -43,7 +43,7 @@ export function Research() {
         data-buddy="read"
         data-buddy-label="hmm..."
       >
-        <SectionHeader num="03" title="Research" />
+        <SectionHeader num="07" title="Research" />
         <div>
           {visible.map((paper, i) => (
             <PaperItem

@@ -1,38 +1,116 @@
-bridge: "When I'm not at work, I build <em>tools I wish existed</em>."
+bridge: "On my own time, I build <em>tools I wish existed</em>."
 
 items:
-  - name: "API testing CLI"
-    url: "#"
+  - name: "vChar"
+    url: "https://github.com/pratikpakhale/vchar"
     year: "2024"
-    tag: "rust"
-    description: "HTTP client with chained requests and assertions. Built because Postman was too heavy for CI. 500+ GitHub stars."
+    tag: "llm/rag"
+    era: "post-ai"
+    description: "AI researcher that runs parallel web searches, ranks results by relevance, and summarizes with citations."
+    image: null
+    story: >
+      I was tired of googling the same things and reading 10 articles to get one answer. So I built
+      something that does all that in parallel and gives me a cited summary. The hard part wasn't the
+      RAG pipeline — it was ranking results from multiple search engines without them all converging
+      on the same SEO-optimized garbage.
 
-  - name: "Distributed task queue"
-    url: "#"
-    year: "2023"
-    tag: "go"
-    description: "Lightweight job queue with Redis backend and at-least-once delivery. Used in production at two companies."
-
-  - name: "Static site compiler"
-    url: "#"
+  - name: "Rewind"
+    url: "https://github.com/ascend-tech/rewind"
     year: "2022"
+    tag: "ai/fullstack"
+    era: "college"
+    description: "Social media platform for music lovers with a voice bot that understands intent — play songs, search users, create posts."
+    image: null
+    story: >
+      What if a social media platform was built entirely around music? Not just sharing songs —
+      actually understanding what you're saying. We built a voice bot that listens to natural language
+      and takes actions: play a song, search a user, create a post. The OpenAI integration was the
+      easy part; making it feel natural was the real challenge.
+
+  - name: "Browser as an API"
+    url: "https://github.com/pratikpakhale/browser"
+    year: "2024"
     tag: "typescript"
-    description: "Markdown + JSX to plain HTML. No hydration, no runtime, sub-50ms builds."
+    era: "post-ai"
+    description: "Playwright-powered browser control as an API. Semaphoric page/window management for low-latency auto-scaling."
+    image: null
+    story: >
+      Needed programmatic browser control without the cold-start tax. The key insight was semaphoric
+      page/window management — pre-warmed browser contexts that auto-scale based on demand. The
+      difference between a 2-second and 200ms API call is just pool management.
 
-  - name: "Terminal dashboard"
-    url: "#"
+  - name: "Terravis"
+    url: "https://github.com/pratikpakhale/terravis"
+    year: "2024"
+    tag: "ai/gis"
+    era: "post-ai"
+    description: "Voice-guided GIS system running entirely offline. Whisper.cpp + Llama.cpp + QGIS."
+    image: null
+    story: >
+      Built this during the IIT Bombay research. Wanted to see if you could navigate a map using
+      just your voice, running inference locally. Whisper.cpp for speech-to-text, Llama.cpp for
+      understanding intent, and QGIS for the map. The whole thing runs offline on commodity hardware.
+
+  - name: "Velocity Events"
+    url: "https://github.com/pratikpakhale/velocity-event-management"
     year: "2022"
-    tag: "go"
-    description: "Real-time system monitor in the terminal. CPU, memory, network, disk I/O — all in one TUI."
+    tag: "mern"
+    era: "college"
+    description: "Event management platform for college clubs — registration to ticketing. 125k+ API calls and counting."
+    image: null
+    story: >
+      Built this because our college club needed a real event platform, not Google Forms. Registration,
+      ticketing, check-in — the whole flow. It's handled 125k+ API calls with zero downtime, which
+      taught me more about production reliability than any course ever did.
 
-  - name: "Git bisect helper"
-    url: "#"
-    year: "2021"
-    tag: "rust"
-    description: "Automates git bisect with custom test commands. Found regressions in seconds instead of hours."
+  - name: "KMB for Steiner Trees"
+    url: "https://github.com/pratikpakhale/kmb-cpu"
+    year: "2024"
+    tag: "c++/python"
+    era: "post-ai"
+    description: "KMB algorithm for Steiner Tree Problem. Parallelized with OpenMP for faster computation."
+    image: null
+    story: >
+      An implementation of the KMB approximation algorithm for the Steiner Tree Problem.
+      The interesting part was using OpenMP to parallelize the shortest-path computations —
+      graph problems are notoriously hard to parallelize well.
 
-  - name: "Schema diff tool"
-    url: "#"
-    year: "2021"
+  - name: "Tweemarks"
+    url: "https://github.com/pratikpakhale/tweemarks-v2"
+    year: "2022"
+    tag: "js/firebase"
+    era: "early"
+    description: "Twitter bookmarking tool with a Telegram bot. Save tweets, access anywhere. Taken down when Twitter API pricing changed."
+    image: null
+    story: >
+      Twitter's bookmark feature was terrible in 2022 — no search, no tags, no export. So I built
+      Tweemarks with a Telegram bot that lets you forward tweets and they get saved with tags.
+      Had real users until Twitter killed free API access. RIP.
+
+  - name: "eMBB-X3C Optimization"
+    url: "https://github.com/pratikpakhale/eMBB-X3C"
+    year: "2024"
     tag: "python"
-    description: "Compares database schemas across environments. Generates migration SQL automatically."
+    era: "post-ai"
+    description: "eMBB optimization using exact 3-cover algorithm."
+    image: null
+
+  - name: "Secret Chats"
+    url: "https://github.com/pratikpakhale/secret-chats"
+    year: "2022"
+    tag: "react/firebase"
+    era: "early"
+    description: "Anonymous chat app tied to your device — no accounts, no history, just chaos on Firebase Realtime."
+    image: null
+    story: >
+      No sign-up, no login, no history. Your device IS your identity. Built on Firebase Realtime
+      so messages appear instantly. The fun part was making it truly anonymous while still preventing
+      abuse — turns out device fingerprinting is a rabbit hole.
+
+  - name: "Resource Lab"
+    url: "https://github.com/pratikpakhale/resource-lab"
+    year: "2023"
+    tag: "react/openai"
+    era: "college"
+    description: "Save URLs with tags to your Notion workspace. Search with OpenAI-powered understanding."
+    image: null

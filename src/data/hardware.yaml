@@ -1,26 +1,22 @@
-bridge: "And sometimes I build things <em>I can hold</em>."
+bridge: "Sometimes those tools are things <em>I can hold</em>."
 
 builds:
-  - name: "Custom macro pad"
-    description: "Split ergo keypad. QMK firmware. Resin-printed case, Fusion 360."
+  - name: "RC Car"
+    description: "Remote-controlled car build — motors, circuits, and way too much soldering."
     image: null
+    video: "/hardware/rc-car.mp4"
+    thumbnail: "/hardware/rc-car-thumb.jpg"
 
-  - name: "PCB motor controller"
-    description: "4-layer ESC board, STM32, FOC control. KiCad, hand-assembled."
+  - name: "Light Controller"
+    description: "Custom LED light controller — hardware meets software."
     image: null
+    video: "/hardware/light-controller.mp4"
+    thumbnail: "/hardware/light-controller-thumb.jpg"
 
-  - name: "GPS cat tracker"
-    description: "ESP32 + LoRa collar. 3D-printed waterproof case. Self-hosted map."
-    image: null
+  - name: "Raspberry Pi 500"
+    description: "The keyboard that's a computer. Compact setup for tinkering."
+    image: "/hardware/raspi500.jpg"
 
-  - name: "Mechanical numpad"
-    description: "CNC aluminum, hot-swap PCB, custom firmware. Made 10 for friends."
-    image: null
-
-  - name: "LED matrix display"
-    description: "64x32 RGB panel driven by Raspberry Pi. Shows weather, Spotify, notifications."
-    image: null
-
-  - name: "Portable soldering station"
-    description: "TS100-based kit in a custom 3D-printed case. USB-C PD powered, field-ready."
-    image: null
+  - name: "Hoodie Pen Stand"
+    description: "3D-printed Nike hoodie pen stand — desk flex."
+    image: "/hardware/hoodie-penstand.jpg"

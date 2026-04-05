@@ -1,23 +1,14 @@
-bridge: "For fun, I make things that <em>make me laugh</em>."
+bridge: "And sometimes I just make things that <em>make me laugh</em>."
 
 items:
-  - name: "Multiplayer ASCII dungeon"
-    description: "Terminal roguelike, WebSocket, one weekend"
+  - name: "uhmegle"
+    description: "Omegle MITM — proxy that lets you spy on what two random strangers are talking about. For science."
+    image: null
 
-  - name: "IRC bot with personality"
-    description: "Markov chains, became most popular member"
+  - name: "Clash of CSS"
+    description: "Competitive CSS battles platform. 100% pixel-match scoring against cssbattles.dev. Built the event queue from scratch."
+    image: null
 
-  - name: "Pixel art editor in 1KB"
-    description: "JS1K entry, 16 colors, canvas"
-
-  - name: "Chess engine in Bash"
-    description: "Terrible at chess, great at parties"
-
-  - name: "Weather haiku bot"
-    description: "Tweets a haiku based on forecast, daily"
-
-  - name: "MIDI foot controller"
-    description: "Arduino, stomp switches, live looping"
-
-  - name: "Regex crossword solver"
-    description: "Brute-force elegance, surprisingly fast"
+  - name: "WiFi Connect"
+    description: "Auto-login script for IIIT Dharwad's captive portal. Because typing credentials 10 times a day is not engineering."
+    image: null

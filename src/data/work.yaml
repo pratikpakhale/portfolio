@@ -1,68 +1,48 @@
-bridge: "I've spent the last few years <em>shipping production systems</em> at places that let me own real problems."
+bridge: "I've spent the last couple years <em>shipping real products</em> at places that gave me hard problems to solve."
 
 positions:
   - hash: "HEAD"
-    date: "2023 — present"
-    title: "Senior Engineer"
-    company: "Acme Corp · Platform team"
+    date: "Dec 2024 — present"
+    title: "Founding Engineer"
+    company: "Raccoon AI · Browser agents"
     diff:
       - type: plus
-        text: "Led migration to event-driven architecture — 40% latency reduction"
+        text: "Motion Graphics Video Creator — a text-to-video motion graphics system with a React-based rendering engine, a director's board approval flow, parallelized frame-by-frame export on serverless GPUs, and a complete audio toolkit"
       - type: plus
-        text: "Redesigned ingestion pipeline — 3x throughput"
+        text: "Local Browser Agent — browser control system with an extension, a DOM snapshot engine, let Raccoon control your local browser to gather better context"
       - type: plus
-        text: "Shipped real-time analytics dashboard, 200+ internal users"
+        text: "Canvas Editor — an infinite pannable canvas for image management with AI inpainting, bg removal, upscale, and resizing"
       - type: plus
-        text: "Mentored 4 junior engineers through first production services"
-      - type: minus
-        text: "Killed the legacy monolith batch processor"
+        text: "Raccoon Inspect — a zero-config Babel plugin + vanilla JS runtime that auto-instruments every JSX element with source metadata, injects a full inspect-mode UI with hover to let Raccoon get context of the element"
+      - type: plus
+        text: "Streaming Architecture — a dual-model (ephemeral events vs. persisted blocks) real-time streaming pipeline with an event emitter/coalescer/reducer, WebSocket transport, a streaming JSON parser with lexer caching for live tool parameter rendering"
+      - type: plus
+        text: "Chat App State & Performance — use zustand and manage global states, cut First Load JS by 44% via dynamic imports and tree-shaking, achieved a 250x faster event pipeline and 5.6x fewer re-renders through lock-free batched processing and Map-based block storage, and fixed keystroke layout thrashing down to ~5ms with content-visibility: auto and RAF-batched textarea resizing"
+      - type: plus
+        text: "Elemetry — a graph-based DOM element caching and action prediction system that records browser automation traces, generates vector embeddings of element roles, and uses a two-phase prediction algorithm (node similarity + timeline path matching) to shortcut the AI agent's expensive LLM inference loop — enabling instant replay of previously-seen interactions with graceful fallback to full reasoning on cache miss"
+    story: >
+      Joined as an intern, now founding engineer. Raccoon is building browser agents that actually work —
+      the kind that remember what you did yesterday and skip the repetitive clicks today. My biggest
+      contribution was Elemetry: a cache engine that stores browser actions as a vector graph, so the
+      agent can replay your past browsing patterns instead of figuring things out from scratch every time.
+      The hard part wasn't the vector search — it was making the graph structure capture intent, not just actions.
 
   - hash: "a7f3e2d"
-    date: "2021 — 2023"
-    title: "Backend Engineer"
-    company: "StartupXYZ · Employee #8"
+    date: "Jul 2023 — present"
+    title: "Research Intern"
+    company: "IIT Bombay · EdTech Research"
     diff:
       - type: plus
-        text: "Built payment infra from scratch — $2M+/month processed"
+        text: "Built adaptive learning system with video bots for student engagement"
       - type: plus
-        text: "Stripe integration with retry logic and idempotency"
+        text: "Implemented feedback platform — React, Express, Flask running deep learning model"
       - type: plus
-        text: "On-call incidents: 12/week → 2/week"
-      - type: minus
-        text: "Deprecated three unmaintained internal tools"
-
-  - hash: "1b04c9a"
-    date: "2020"
-    title: "Software Engineering Intern"
-    company: "BigTechCo · Infrastructure"
-    diff:
+        text: "Shipped as Docker container and Electron app for offline use"
       - type: plus
-        text: "Built CLI tool adopted by 50+ engineers"
-      - type: plus
-        text: "Saved ~30 min per release cycle"
-      - type: plus
-        text: "Return offer received"
-
-  - hash: "e4b82f1"
-    date: "2019 — 2020"
-    title: "Full-Stack Developer"
-    company: "Freelance · Various clients"
-    diff:
-      - type: plus
-        text: "Delivered 8 client projects across e-commerce, SaaS, and healthcare"
-      - type: plus
-        text: "Built a booking platform handling 500+ daily reservations"
-      - type: minus
-        text: "Sunset a legacy WordPress multisite network"
-
-  - hash: "0c3a91d"
-    date: "2018 — 2019"
-    title: "Junior Developer"
-    company: "LocalAgency · Web team"
-    diff:
-      - type: plus
-        text: "Shipped responsive redesign for 12 client sites"
-      - type: plus
-        text: "Introduced component library — cut dev time by 35%"
-      - type: plus
-        text: "First production deploy on day three"
+        text: "Lead backend developer on GeoGuru — LMS with geographical information system"
+    story: >
+      Started as a summer research intern, stayed on because the problems were interesting. The affect-aware
+      system uses video bots that adapt based on how engaged students are — the deep learning model runs
+      on Flask and feeds back into the React frontend in real-time. GeoGuru was the bigger challenge:
+      building a full LMS that integrates QGIS for spatial data. I own the backend architecture and it
+      needs to handle concurrent map rendering sessions, which is a different beast from typical CRUD.

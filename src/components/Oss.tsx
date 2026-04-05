@@ -46,7 +46,7 @@ export function Oss() {
         data-buddy="heart"
         data-buddy-label="<3"
       >
-        <SectionHeader num="08" title="Open source & volunteering" />
+        <SectionHeader num="02" title="Open source & volunteering" />
         <div>
           {visible.map((item, i) => (
             <OssRow
