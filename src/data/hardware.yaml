@@ -2,21 +2,21 @@ bridge: "Sometimes those tools are things <em>I can hold</em>."
 
 builds:
   - name: "RC Car"
-    description: "Remote-controlled car build — motors, circuits, and way too much soldering."
+    description: "Remote-controlled car — motors, circuits, and way too much soldering."
     image: null
     video: "/hardware/rc-car.mp4"
     thumbnail: "/hardware/rc-car-thumb.jpg"
 
   - name: "Light Controller"
-    description: "Custom LED light controller — hardware meets software."
+    description: "Room's LED light controller :)"
     image: null
     video: "/hardware/light-controller.mp4"
     thumbnail: "/hardware/light-controller-thumb.jpg"
 
   - name: "Raspberry Pi 500"
-    description: "The keyboard that's a computer. Compact setup for tinkering."
+    description: "My dev box and that controls my hermes agents, automations and everything around me."
     image: "/hardware/raspi500.jpg"
 
   - name: "Hoodie Pen Stand"
-    description: "3D-printed Nike hoodie pen stand — desk flex."
+    description: "3D-printed Nike hoodie pen stand. Not my design, but I like it a lot :))"
     image: "/hardware/hoodie-penstand.jpg"

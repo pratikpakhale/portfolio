@@ -1,6 +1,12 @@
-bridge: "When I slow down, I write about <em>what I learn</em>."
+bridge: "Some <em>Research</em>,"
 
 papers:
+  - authors: "Smruti Patil, Pratik Pakhale, Ashish Gidijala, Chinmay Shewale, Shashwat Chandel, Utkarsh Mahadeo Khaire."
+    title: "Socio-Nomadic Learning Optimization."
+    venue: "ICAMS 2025, Springer Proceedings in Mathematics & Statistics, pp. 73–83."
+    links:
+      - label: springer
+        url: "https://link.springer.com/chapter/10.1007/978-981-95-3841-6_6"
   - authors: "Animesh Chaturvedi, VK Vivekraj, Pratik Pakhale, Karthik Avinash."
     title: "Vedalytics: Concepts as Knowledge from Rules of the Ancient Indian Scriptures."
     venue: "2024 IEEE International Conference on Big Data (BigData), pp. 6967–6976."

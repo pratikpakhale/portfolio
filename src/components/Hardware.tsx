@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { SectionHeader } from "./SectionHeader";
+import { SectionFooter } from "./SectionFooter";
 import { Bridge } from "./Bridge";
 import { FadeIn } from "./FadeIn";
 import { hardware } from "@/lib/data";
@@ -89,7 +90,7 @@ export function BuildCard({ build }: { build: Build }) {
       ) : null}
       <div className="p-3 px-3.5">
         <div className="text-sm font-medium mb-[3px]">{build.name}</div>
-        <div className="text-[13px] text-muted leading-normal">
+        <div className="text-[14px] text-muted leading-normal">
           {build.description}
         </div>
       </div>
@@ -103,18 +104,14 @@ export function Hardware() {
   return (
     <>
       <Bridge html={hardware.bridge} />
-      <section
-        id="hardware"
-        className="py-6 pb-18"
-        data-buddy="build"
-        data-buddy-label="*bzzzz*"
-      >
+      <section id="hardware" className="py-6 pb-18">
         <SectionHeader num="04" title="Hardware & builds" />
         <div className="grid grid-cols-2 gap-3.5 max-sm:grid-cols-1">
           {hardware.builds.map((build) => (
             <BuildCard key={build.name} build={build} />
           ))}
         </div>
+        <SectionFooter route="/hardware" className="mt-4" />
       </section>
     </>
   );

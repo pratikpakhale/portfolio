@@ -1,49 +1,143 @@
-bridge: "On my own time, I build <em>tools I wish existed</em>."
+bridge: "On my own time, I build <em>tools I wish existed</em> — some to learn, some to scratch an itch, some just for fun."
 
+# Tabs on /projects, in this order.
+groups:
+  - key: "vibecoded"
+    title: "vibecoded"
+
+  - key: "learning"
+    title: "learning"
+
+  - key: "fun"
+    title: "fun"
+
+# `tag` is the chip on the card; `group` is the tab it lands under.
+# `featured` promotes it to the homepage grid.
 items:
-  - name: "vChar"
-    url: "https://github.com/pratikpakhale/vchar"
-    year: "2024"
-    tag: "llm/rag"
-    era: "post-ai"
-    description: "AI researcher that runs parallel web searches, ranks results by relevance, and summarizes with citations."
+  - name: "sitedrop"
+    live: "https://site.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    featured: true
+    description: "Netlify Drop, but personal. My agents deploy quick static sites to it all day"
     image: null
-    story: >
-      I was tired of googling the same things and reading 10 articles to get one answer. So I built
-      something that does all that in parallel and gives me a cited summary. The hard part wasn't the
-      RAG pipeline — it was ranking results from multiple search engines without them all converging
-      on the same SEO-optimized garbage.
+
+  - name: "shadcn registry browser"
+    live: "https://shadcn.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    featured: true
+    description: "Browse multiple UI component registries in one place. Auto updated from ShadCN registry"
+    image: null
+
+  - name: "pdf"
+    live: "https://pdf.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    featured: true
+    description: "PDF toolkit that runs entirely in the browser."
+    image: null
+
+  - name: "pakhale"
+    repo: "https://github.com/pratikpakhale/pakhale"
+    year: "2026"
+    tag: "cli"
+    group: "vibecoded"
+    featured: true
+    description: "npx pakhale setup agents — keeps my coding agents (Claude Code, opencode) configured identically on every machine, from one command"
+    image: null
+
+  - name: "whispr"
+    live: "https://whispr.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    description: "Safe, secure, private chats."
+    image: null
+
+  - name: "txt"
+    live: "https://txt.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    description: "End-to-end encrypted online notepad"
+    image: null
+
+  - name: "diffs"
+    live: "https://diffs.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    description: "Paste two texts, see the diff instantly."
+    image: null
+
+  - name: "jsonl"
+    live: "https://jsonl.pakhale.com"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    description: "Fast JSONL viewer — table & json views, search, keyboard nav."
+    image: null
 
   - name: "Rewind"
-    url: "https://github.com/ascend-tech/rewind"
+    repo: "https://github.com/ascend-tech/rewind"
     year: "2022"
     tag: "ai/fullstack"
-    era: "college"
+    group: "learning"
     description: "Social media platform for music lovers with a voice bot that understands intent — play songs, search users, create posts."
     image: null
     story: >
       What if a social media platform was built entirely around music? Not just sharing songs —
       actually understanding what you're saying. We built a voice bot that listens to natural language
-      and takes actions: play a song, search a user, create a post. The OpenAI integration was the
-      easy part; making it feel natural was the real challenge.
+      and takes actions: play a song, search a user, create a post. Wiring up OpenAI was
+      straightforward; making it feel natural took most of the time.
+
+  - name: "Velocity Events"
+    repo: "https://github.com/pratikpakhale/velocity-event-management"
+    year: "2022"
+    tag: "mern"
+    group: "learning"
+    featured: true
+    description: "Event management platform for college clubs — registration to ticketing. 125k+ API calls and counting."
+    image: null
+    story: >
+      Built this because our college club needed a real event platform, not Google Forms. Registration,
+      ticketing, check-in — the whole flow. It's handled 125k+ API calls so far, and keeping it up
+      taught me a lot about production reliability.
+
+  - name: "vChar"
+    repo: "https://github.com/pratikpakhale/vchar"
+    year: "2024"
+    tag: "llm/rag"
+    group: "learning"
+    description: "AI researcher that runs parallel web searches, ranks results by relevance, and summarizes with citations."
+    image: null
+    story: >
+      I was tired of googling the same things and reading 10 articles to get one answer, so I built
+      something that does it in parallel and gives me a cited summary. Most of the work went into
+      ranking results across multiple search engines, since they tend to converge on the same handful
+      of SEO-tuned pages.
 
   - name: "Browser as an API"
-    url: "https://github.com/pratikpakhale/browser"
+    repo: "https://github.com/pratikpakhale/browser"
     year: "2024"
     tag: "typescript"
-    era: "post-ai"
+    group: "learning"
     description: "Playwright-powered browser control as an API. Semaphoric page/window management for low-latency auto-scaling."
     image: null
     story: >
-      Needed programmatic browser control without the cold-start tax. The key insight was semaphoric
-      page/window management — pre-warmed browser contexts that auto-scale based on demand. The
-      difference between a 2-second and 200ms API call is just pool management.
+      Needed programmatic browser control without the cold-start tax. It came down to semaphoric
+      page/window management — pre-warmed browser contexts that auto-scale based on demand. That's
+      most of the gap between a 2-second and a 200ms API call.
 
   - name: "Terravis"
-    url: "https://github.com/pratikpakhale/terravis"
+    repo: "https://github.com/pratikpakhale/terravis"
     year: "2024"
     tag: "ai/gis"
-    era: "post-ai"
+    group: "learning"
     description: "Voice-guided GIS system running entirely offline. Whisper.cpp + Llama.cpp + QGIS."
     image: null
     story: >
@@ -51,55 +145,35 @@ items:
       just your voice, running inference locally. Whisper.cpp for speech-to-text, Llama.cpp for
       understanding intent, and QGIS for the map. The whole thing runs offline on commodity hardware.
 
-  - name: "Velocity Events"
-    url: "https://github.com/pratikpakhale/velocity-event-management"
-    year: "2022"
-    tag: "mern"
-    era: "college"
-    description: "Event management platform for college clubs — registration to ticketing. 125k+ API calls and counting."
-    image: null
-    story: >
-      Built this because our college club needed a real event platform, not Google Forms. Registration,
-      ticketing, check-in — the whole flow. It's handled 125k+ API calls with zero downtime, which
-      taught me more about production reliability than any course ever did.
-
   - name: "KMB for Steiner Trees"
-    url: "https://github.com/pratikpakhale/kmb-cpu"
+    repo: "https://github.com/pratikpakhale/kmb-cpu"
     year: "2024"
     tag: "c++/python"
-    era: "post-ai"
+    group: "learning"
     description: "KMB algorithm for Steiner Tree Problem. Parallelized with OpenMP for faster computation."
     image: null
     story: >
       An implementation of the KMB approximation algorithm for the Steiner Tree Problem.
       The interesting part was using OpenMP to parallelize the shortest-path computations —
-      graph problems are notoriously hard to parallelize well.
+      graph problems don't parallelize cleanly.
 
   - name: "Tweemarks"
-    url: "https://github.com/pratikpakhale/tweemarks-v2"
+    repo: "https://github.com/pratikpakhale/tweemarks-v2"
     year: "2022"
     tag: "js/firebase"
-    era: "early"
+    group: "learning"
     description: "Twitter bookmarking tool with a Telegram bot. Save tweets, access anywhere. Taken down when Twitter API pricing changed."
     image: null
     story: >
-      Twitter's bookmark feature was terrible in 2022 — no search, no tags, no export. So I built
+      Twitter's bookmark feature in 2022 had no search, no tags, no export. So I built
       Tweemarks with a Telegram bot that lets you forward tweets and they get saved with tags.
       Had real users until Twitter killed free API access. RIP.
 
-  - name: "eMBB-X3C Optimization"
-    url: "https://github.com/pratikpakhale/eMBB-X3C"
-    year: "2024"
-    tag: "python"
-    era: "post-ai"
-    description: "eMBB optimization using exact 3-cover algorithm."
-    image: null
-
   - name: "Secret Chats"
-    url: "https://github.com/pratikpakhale/secret-chats"
+    repo: "https://github.com/pratikpakhale/secret-chats"
     year: "2022"
     tag: "react/firebase"
-    era: "early"
+    group: "learning"
     description: "Anonymous chat app tied to your device — no accounts, no history, just chaos on Firebase Realtime."
     image: null
     story: >
@@ -107,10 +181,15 @@ items:
       so messages appear instantly. The fun part was making it truly anonymous while still preventing
       abuse — turns out device fingerprinting is a rabbit hole.
 
-  - name: "Resource Lab"
-    url: "https://github.com/pratikpakhale/resource-lab"
-    year: "2023"
-    tag: "react/openai"
-    era: "college"
-    description: "Save URLs with tags to your Notion workspace. Search with OpenAI-powered understanding."
+  - name: "uhmegle"
+    tag: "fun"
+    group: "fun"
+    featured: true
+    description: "Omegle MITM — proxy that lets you spy on what two random strangers are talking about. \"For education\"."
+    image: null
+
+  - name: "Clash of CSS"
+    tag: "fun"
+    group: "fun"
+    description: "CSS Battles but better, faster and for college events :)"
     image: null

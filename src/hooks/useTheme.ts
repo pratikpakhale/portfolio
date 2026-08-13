@@ -1,34 +1,42 @@
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
-function getInitialTheme(): Theme {
-  // Theme switching disabled — locked to dark mode
-  return "dark";
-  // if (typeof window === "undefined") return "light";
-  // const stored = localStorage.getItem("theme") as Theme | null;
-  // if (stored) return stored;
-  // return window.matchMedia("(prefers-color-scheme: dark)").matches
-  //   ? "dark"
-  //   : "light";
+/**
+ * The `dark` class on `<html>` is the store.
+ *
+ * The inline script in index.html sets it from localStorage before first
+ * paint, so the page never flashes the wrong theme — this hook subscribes to
+ * that class rather than keeping a second copy of the state in React, which
+ * also means the prerendered markup and the first client render agree.
+ */
+
+let listeners: (() => void)[] = [];
+
+function subscribe(onChange: () => void) {
+  listeners = [...listeners, onChange];
+  return () => {
+    listeners = listeners.filter((l) => l !== onChange);
+  };
+}
+
+function getSnapshot(): Theme {
+  return document.documentElement.classList.contains("dark") ? "dark" : "light";
+}
+
+/** Prerendered HTML carries no `dark` class; the script applies it on load. */
+function getServerSnapshot(): Theme {
+  return "light";
 }
 
 export function useTheme() {
-  const [theme, _setTheme] = useState<Theme>(getInitialTheme);
+  const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  // Theme toggle disabled — locked to dark mode
   const toggle = useCallback(() => {
-    // setTheme((t) => (t === "light" ? "dark" : "light"));
+    const next: Theme = getSnapshot() === "light" ? "dark" : "light";
+    document.documentElement.classList.toggle("dark", next === "dark");
+    localStorage.setItem("theme", next);
+    listeners.forEach((l) => l());
   }, []);
 
   return { theme, toggle } as const;

@@ -10,24 +10,17 @@ const VISIBLE_COUNT = 3;
 
 export function OssRow({ item, className }: { item: OssItemType; className?: string }) {
   return (
-    <FadeIn
-      className={`py-3.5 flex justify-between items-baseline gap-6 ${className ?? ""}`}
-    >
-      <div>
-        <div className="text-[15px]">
-          {item.url ? (
-            <a href={item.url} className="border-none hover:text-accent transition-colors">
-              {item.name}
-            </a>
-          ) : (
-            item.name
-          )}
-        </div>
-        <div className="text-[13px] text-muted mt-0.5">{item.role}</div>
+    <FadeIn className={`py-3.5 ${className ?? ""}`}>
+      <div className="text-[16px]">
+        {item.url ? (
+          <a href={item.url} className="border-none hover:text-accent transition-colors">
+            {item.name}
+          </a>
+        ) : (
+          item.name
+        )}
       </div>
-      <span className="font-mono text-xs text-dim shrink-0">
-        {item.period}
-      </span>
+      <div className="text-[14px] text-muted mt-0.5">{item.role}</div>
     </FadeIn>
   );
 }
@@ -40,12 +33,7 @@ export function Oss() {
   return (
     <>
       <Bridge html={oss.bridge} />
-      <section
-        id="oss"
-        className="py-6 pb-18"
-        data-buddy="heart"
-        data-buddy-label="<3"
-      >
+      <section id="oss" className="py-6 pb-18">
         <SectionHeader num="02" title="Open source & volunteering" />
         <div>
           {visible.map((item, i) => (

@@ -3,8 +3,8 @@ import { profile } from "@/lib/data";
 
 export function Footer() {
   return (
-    <FadeIn as="footer" className="py-12 pb-16 text-center text-dim text-[13px] font-mono">
-      <div className="flex justify-center gap-5 mb-4">
+    <FadeIn as="footer" className="py-12 pb-16 text-center text-dim text-[14px] font-mono">
+      <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-4">
         {profile.links.map((link) => (
           <a
             key={link.label}
@@ -15,7 +15,6 @@ export function Footer() {
           </a>
         ))}
       </div>
-      <p>Plain HTML. No frameworks. Just text and a tiny pixel friend.</p>
     </FadeIn>
   );
 }

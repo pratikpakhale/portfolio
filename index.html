@@ -1,24 +1,42 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f4" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141311" />
+    <!-- Titles, descriptions, canonicals and JSON-LD are emitted per route by
+         src/lib/head.ts and baked into each prerendered page. -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@300,400,500,700,1,2&display=swap"
       rel="stylesheet"
     />
-    <!-- Theme switching disabled — locked to dark mode (class set on <html>) -->
-    <!-- <script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
       (function () {
-        var t = localStorage.getItem("theme");
-        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme:dark)").matches))
+        if (localStorage.getItem("theme") === "dark")
           document.documentElement.classList.add("dark");
       })();
-    </script> -->
+    </script>
+    <noscript>
+      <!-- Sections reveal on scroll via IntersectionObserver; without JS they
+           would stay at opacity 0. The text is in the HTML either way. -->
+      <style>
+        .fade-in {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

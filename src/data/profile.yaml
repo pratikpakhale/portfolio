@@ -1,12 +1,36 @@
 name: "Pratik Pakhale"
 title: "Engineer"
-tagline: "Most of what I build starts as 'what if I just...' at 2am."
+tagline: "Most of what I build starts as me fixing my own problem"
 links:
   - label: github
     url: "https://github.com/pratikpakhale"
+    icon: github
+    handle: "@pratikpakhale"
+    color: "#181717"
+    colorDark: "#e6edf3"
+
+  - label: x
+    url: "https://x.com/_pratikpakhale"
+    icon: x
+    handle: "@_pratikpakhale"
+    color: "#000000"
+    colorDark: "#e6edf3"
+
   - label: linkedin
     url: "https://www.linkedin.com/in/pratikpakhale"
+    icon: linkedin
+    handle: "in/pratikpakhale"
+    color: "#0a66c2"
+    colorDark: "#4da3e8"
+
   - label: resume.pdf
-    url: "https://pratik.pakhale.com/resume.pdf"
+    url: "/resume.pdf"
+    icon: file
+    handle: "resume.pdf"
+
   - label: email
-    url: "mailto:pratikpakhale20@gmail.com"
+    url: "mailto:pratik@pakhale.com"
+    icon: mail
+    handle: "pratik@pakhale.com"
+    note: "also at pratikpakhale20@gmail.com"
+    noteUrl: "mailto:pratikpakhale20@gmail.com"

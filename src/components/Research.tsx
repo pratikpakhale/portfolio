@@ -10,11 +10,11 @@ const VISIBLE_COUNT = 2;
 
 export function PaperItem({ paper, className }: { paper: Paper; className?: string }) {
   return (
-    <FadeIn className={`py-[18px] text-[15px] leading-relaxed ${className ?? ""}`}>
+    <FadeIn className={`py-[18px] text-[16px] leading-relaxed ${className ?? ""}`}>
       <span className="text-muted">{paper.authors}</span>{" "}
       <span className="font-medium italic">{paper.title}</span>{" "}
       <span className="text-dim font-mono text-xs">{paper.venue}</span>
-      <div className="mt-1 font-mono text-[11px]">
+      <div className="mt-1 font-mono text-[12px]">
         {paper.links.map((link) => (
           <a
             key={link.label}
@@ -37,13 +37,8 @@ export function Research() {
   return (
     <>
       <Bridge html={research.bridge} />
-      <section
-        id="research"
-        className="py-6 pb-18"
-        data-buddy="read"
-        data-buddy-label="hmm..."
-      >
-        <SectionHeader num="07" title="Research" />
+      <section id="research" className="py-6 pb-18">
+        <SectionHeader num="05" title="Research" />
         <div>
           {visible.map((paper, i) => (
             <PaperItem

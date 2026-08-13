@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Instrument Serif", Georgia, serif;
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-sans: "Satoshi", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   --color-bg: #faf8f4;
@@ -17,6 +16,7 @@
   --color-border: #ddd9d1;
   --color-green: #4a7a45;
   --color-red: #a85454;
+  --color-dot: rgba(26, 25, 24, 0.1);
 }
 
 .dark {
@@ -32,22 +32,32 @@
   --color-border: #302d28;
   --color-green: #6aad63;
   --color-red: #d47272;
+  --color-dot: rgba(232, 229, 223, 0.09);
 }
 
 @layer base {
   html {
-    background: var(--color-bg);
+    background-color: var(--color-bg);
+    /* Faint dot grid; gives the page a hint of texture behind the column. */
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      var(--color-dot) 1px,
+      transparent 0
+    );
+    background-size: 26px 26px;
     color: var(--color-text);
     font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.65;
+    font-size: 17px;
+    line-height: 1.7;
+    /* Satoshi runs a touch loose at reading size. */
+    letter-spacing: -0.006em;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     transition: background-color 0.3s, color 0.3s;
   }
 
   body {
-    max-width: 680px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 0 24px;
   }
@@ -81,6 +91,18 @@
     color: var(--color-text);
     font-style: normal;
   }
+}
+
+/* Platform brand color, with a dark-mode substitute for marks that
+   disappear on a dark ground (GitHub's black, mainly). */
+.brand,
+.brand:hover {
+  color: var(--brand, var(--color-accent));
+}
+
+.dark .brand,
+.dark .brand:hover {
+  color: var(--brand-dark, var(--brand, var(--color-accent)));
 }
 
 /* Fade in animation */

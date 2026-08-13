@@ -1,32 +1,30 @@
-bridge: "Along the way, I try to <em>give back</em> and build for communities I'm part of."
+bridge: "Along the way, I <em>build for communities</em> I'm part of."
 
 items:
   - name: "Google Summer of Code — PEcAn Project (Mentor)"
     url: "https://summerofcode.withgoogle.com"
     role: "Mentoring a GSoC project on LLM-assisted extraction of agronomic and ecological experiments into structured data."
-    period: "Summer 2025"
 
   - name: "Google Summer of Code — PEcAn Project"
     url: "https://summerofcode.withgoogle.com/programs/2024/projects/tsyopiTU"
     role: "Integrated JSON schema parser into FieldActivity R Shiny app. Reworked data structures for complex management scenarios."
-    period: "Summer 2024"
+
+  - name: "manaflow-ai/cmux"
+    url: "https://github.com/manaflow-ai/cmux/"
+    role: "Added cmux.json support for custom commands."
 
   - name: "IIIT Dharwad Website"
     url: "https://iiitdwd.ac.in"
-    role: "Led 15 developers to build the official college website. Next.js Turborepo, CI/CD on cPanel. Base version shipped in 10 days."
-    period: "2024 — now"
-
-  - name: "manaflow-ai/cmux"
-    url: "https://github.com/manaflow-ai/cmux/pull/2011"
-    role: "Added cmux.json support for custom commands. Merged."
-    period: "Mar 2026"
-
-  - name: "browser-use/browser-use"
-    url: "https://github.com/browser-use/browser-use/pull/210"
-    role: "Fixed highlight elements arg in build-dom-tree script. Merged."
-    period: "Jan 2025"
+    role: "Led a team of 15 building the official college website. Next.js Turborepo, CI/CD on cPanel. Base version shipped in 10 days."
 
   - name: "IIIT Dharwad Conclave"
     url: "https://conclave.iiitdwd.ac.in"
-    role: "Built the conclave website with Sanity CMS for testimonials and dynamic content."
-    period: "Nov 2024"
+    role: "Built and shipped the site for the college conclave."
+
+  - name: "Basaveshwar Engineering College Website"
+    url: "https://becbgk.edu"
+    role: "Built the official college website."
+
+  - name: "browser-use/browser-use"
+    url: "https://github.com/browser-use/browser-use"
+    role: "Fixed a bug"

@@ -47,14 +47,9 @@ export function Work() {
   return (
     <>
       <Bridge html={work.bridge} />
-      <section
-        id="work"
-        className="py-6 pb-18"
-        data-buddy="type"
-        data-buddy-label="*clack clack*"
-      >
-        <SectionHeader num="01" title="Where I've been" />
-        <div className="font-mono text-[13px]">
+      <section id="work" className="py-6 pb-18">
+        <SectionHeader num="01" title="Work" />
+        <div className="font-mono text-[14px]">
           {visible.map((pos, i) => (
             <WorkPosition
               key={pos.hash}

@@ -1,25 +1,36 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { FadeIn } from "./FadeIn";
+import { LinkWithPreview } from "./LinkWithPreview";
 import { profile } from "@/lib/data";
 
 export function Hero() {
   return (
-    <header className="py-[100px] pb-20" data-buddy="wave" data-buddy-label="">
-      <FadeIn as="h1" className="font-serif text-[clamp(44px,8vw,72px)] font-normal leading-[1.05] tracking-tight mb-5">
+    <header className="py-25 pb-20">
+      <FadeIn as="h1" className="font-sans text-[clamp(38px,6.5vw,52px)] font-semibold leading-[1.12] tracking-[-0.025em] mb-5">
         {profile.name}
       </FadeIn>
-      <FadeIn className="text-[17px] text-muted max-w-[460px] leading-relaxed">
+      <FadeIn className="text-[19px] text-muted max-w-[520px] leading-relaxed">
         <p>{profile.tagline}</p>
       </FadeIn>
-      <FadeIn className="mt-7 flex gap-[18px] font-mono text-[13px]">
+      <FadeIn className="mt-7 flex flex-wrap gap-x-[18px] gap-y-2.5 font-mono text-[14px]">
         {profile.links.map((link) => (
-          <a
+          <LinkWithPreview
             key={link.label}
-            href={link.url}
+            link={link}
             className="text-dim border-b border-border hover:text-accent hover:border-accent transition-colors"
-          >
-            {link.label}
-          </a>
+          />
         ))}
+
+        <span aria-hidden className="text-border select-none">/</span>
+
+        <Link
+          to="/projects"
+          className="inline-flex items-center gap-1 text-dim border-b border-border hover:text-accent hover:border-accent transition-colors"
+        >
+          projects archive
+          <ArrowRight size={12} className="shrink-0" />
+        </Link>
       </FadeIn>
     </header>
   );

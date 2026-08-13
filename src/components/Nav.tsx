@@ -5,10 +5,8 @@ const links = [
   { href: "#oss", num: "02", label: "oss" },
   { href: "#projects", num: "03", label: "projects" },
   { href: "#hardware", num: "04", label: "hardware" },
-  { href: "#fun", num: "05", label: "fun" },
-  { href: "#vibecoded", num: "06", label: "vibecoded" },
-  { href: "#research", num: "07", label: "research" },
-  { href: "#sidequests", num: "08", label: "side quests" },
+  { href: "#research", num: "05", label: "research" },
+  { href: "#sidequests", num: "06", label: "side quests" },
 ];
 
 const sectionIds = links.map((l) => l.href.slice(1));
@@ -43,10 +41,12 @@ export function Nav() {
   }, []);
 
   useEffect(() => {
-    updateActive();
+    // Seed after paint, so section offsets are measured against a laid-out page.
+    const raf = requestAnimationFrame(updateActive);
     window.addEventListener("scroll", updateActive, { passive: true });
     window.addEventListener("resize", updateActive, { passive: true });
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener("scroll", updateActive);
       window.removeEventListener("resize", updateActive);
     };

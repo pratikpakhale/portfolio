@@ -6,10 +6,10 @@ import { research } from "@/lib/data";
 
 export function ResearchPage() {
   return (
-    <PageLayout>
+    <PageLayout path="/research">
       <section className="py-6 pb-18">
-        <SectionHeader num="07" title="Research" />
-        <FadeIn className="text-muted text-[15px] leading-relaxed -mt-4 mb-8 max-w-[520px] font-serif">
+        <SectionHeader num="05" title="Research" level={1} />
+        <FadeIn className="text-muted text-[16px] leading-relaxed -mt-4 mb-8 max-w-[600px] font-sans">
           <p dangerouslySetInnerHTML={{ __html: research.bridge }} />
         </FadeIn>
         <div>

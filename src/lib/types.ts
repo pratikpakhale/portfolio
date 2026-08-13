@@ -3,11 +3,34 @@ export interface Link {
   url: string;
 }
 
+export type BrandIconName =
+  | "github"
+  | "linkedin"
+  | "x"
+  | "file"
+  | "mail"
+  | "globe";
+
+export interface ProfileLink extends Link {
+  /** Which mark to show in the hover card. */
+  icon: BrandIconName;
+  /** Username, address, or filename shown next to the icon. */
+  handle: string;
+  /** Brand color for the icon and handle. Defaults to the site accent. */
+  color?: string;
+  /** Substitute used in dark mode, for marks that vanish on a dark ground. */
+  colorDark?: string;
+  /** Optional one-liner under the handle. */
+  note?: string;
+  /** Makes the note itself clickable. */
+  noteUrl?: string;
+}
+
 export interface Profile {
   name: string;
   title: string;
   tagline: string;
-  links: Link[];
+  links: ProfileLink[];
 }
 
 export interface DiffLine {
@@ -29,19 +52,35 @@ export interface WorkData {
   positions: Position[];
 }
 
+/**
+ * Everything I've built lives in one list — side projects, vibecoded tools and
+ * one-off jokes alike. `tag` is the chip on the card, `group` decides which
+ * archive tab it lands under, and an item needs at least one of live/repo to
+ * be linkable (a few of the older ones are neither, and render as plain text).
+ */
 export interface Project {
   name: string;
-  url: string;
-  year: string;
+  /** Hosted URL, when the thing is running somewhere. */
+  live?: string;
+  /** Source repository, when it's public. */
+  repo?: string;
+  year?: string;
   tag: string;
+  group: string;
+  featured?: boolean;
   description: string;
   image: string | null;
   story?: string;
-  era?: string;
+}
+
+export interface ProjectGroup {
+  key: string;
+  title: string;
 }
 
 export interface ProjectsData {
   bridge: string;
+  groups: ProjectGroup[];
   items: Project[];
 }
 
@@ -70,30 +109,6 @@ export interface HardwareData {
   builds: Build[];
 }
 
-export interface Demo {
-  name: string;
-  url: string;
-  note: string;
-  image: string | null;
-}
-
-export interface VibecodedData {
-  bridge: string;
-  subtitle: string;
-  demos: Demo[];
-}
-
-export interface FunItem {
-  name: string;
-  description: string;
-  image: string | null;
-}
-
-export interface FunData {
-  bridge: string;
-  items: FunItem[];
-}
-
 export interface SideQuestItem {
   name: string;
   description: string;
@@ -109,7 +124,6 @@ export interface OssItem {
   name: string;
   url: string | null;
   role: string;
-  period: string;
 }
 
 export interface OssData {

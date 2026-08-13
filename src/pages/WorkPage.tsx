@@ -42,13 +42,13 @@ function WorkEntry({ pos }: { pos: Position }) {
 
 export function WorkPage() {
   return (
-    <PageLayout>
+    <PageLayout path="/work">
       <section className="py-6 pb-18">
-        <SectionHeader num="01" title="Where I've been" />
-        <FadeIn className="text-muted text-[15px] leading-relaxed -mt-4 mb-8 max-w-[520px] font-serif">
+        <SectionHeader num="01" title="Work" level={1} />
+        <FadeIn className="text-muted text-[16px] leading-relaxed -mt-4 mb-8 max-w-[600px] font-sans">
           <p dangerouslySetInnerHTML={{ __html: work.bridge }} />
         </FadeIn>
-        <div className="font-mono text-[13px]">
+        <div className="font-mono text-[14px]">
           {work.positions.map((pos) => (
             <WorkEntry key={pos.hash} pos={pos} />
           ))}

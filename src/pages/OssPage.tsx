@@ -6,10 +6,10 @@ import { oss } from "@/lib/data";
 
 export function OssPage() {
   return (
-    <PageLayout>
+    <PageLayout path="/oss">
       <section className="py-6 pb-18">
-        <SectionHeader num="02" title="Open source & volunteering" />
-        <FadeIn className="text-muted text-[15px] leading-relaxed -mt-4 mb-8 max-w-[520px] font-serif">
+        <SectionHeader num="02" title="Open source & volunteering" level={1} />
+        <FadeIn className="text-muted text-[16px] leading-relaxed -mt-4 mb-8 max-w-[600px] font-sans">
           <p dangerouslySetInnerHTML={{ __html: oss.bridge }} />
         </FadeIn>
         <div>
