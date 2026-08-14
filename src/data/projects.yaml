@@ -82,6 +82,15 @@ items:
     description: "Fast JSONL viewer — table & json views, search, keyboard nav."
     image: null
 
+  - name: "draw"
+    live: "https://draw.pakhale.com"
+    repo: "https://github.com/pratikpakhale/draw"
+    year: "2026"
+    tag: "vibecoded"
+    group: "vibecoded"
+    description: "Excalidraw whiteboard that remembers — boards, pages, and read-only share links."
+    image: null
+
   - name: "Rewind"
     repo: "https://github.com/ascend-tech/rewind"
     year: "2022"
