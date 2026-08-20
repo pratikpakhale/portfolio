@@ -19,7 +19,7 @@ export const SITE = {
   locale: "en_US",
   twitter: "@_pratikpakhale",
   ogImage: "/og.png",
-  ogImageAlt: "Pratik Pakhale — engineer. pratik.pakhale.com",
+  ogImageAlt: "Pratik Pakhale, pratik.pakhale.com",
 } as const;
 
 export interface PageMeta {
@@ -40,7 +40,7 @@ export const PAGES: PageMeta[] = [
   {
     path: "/",
     label: "Home",
-    title: "Pratik Pakhale — Engineer",
+    title: "Pratik Pakhale",
     description:
       "Pratik Pakhale is a founding engineer at Raccoon AI, working on browser agents and the infrastructure around them. Projects, open source, research and hardware builds.",
     priority: 1.0,
