@@ -2,7 +2,7 @@ bridge: "Along the way, I <em>build for communities</em> I'm part of."
 
 items:
   - name: "Google Summer of Code — PEcAn Project (Mentor)"
-    url: "https://summerofcode.withgoogle.com"
+    url: "https://summerofcode.withgoogle.com/programs/2026/projects/9N3lJpwq"
     role: "Mentoring a GSoC project on LLM-assisted extraction of agronomic and ecological experiments into structured data."
 
   - name: "Google Summer of Code — PEcAn Project"
