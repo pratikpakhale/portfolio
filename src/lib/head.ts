@@ -82,7 +82,7 @@ export function headFor(path: string): PageHead {
 export function notFoundHead(): PageHead {
   return {
     lang: "en",
-    title: `Not found — ${SITE.name}`,
+    title: `Not found · ${SITE.name}`,
     elements: [meta({ name: "robots", content: "noindex, follow" })],
   };
 }

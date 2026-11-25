@@ -7,7 +7,7 @@ export function SideQuestsPage() {
   return (
     <PageLayout path="/sidequests">
       <section className="py-6 pb-18">
-        <SectionHeader num="06" title="Side quests" level={1} />
+        <SectionHeader num="07" title="Side quests" level={1} />
         <div className="text-[16px] leading-[2.2]">
           {sidequests.items.map((item, i) => (
             <SideQuestRow

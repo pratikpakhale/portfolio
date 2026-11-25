@@ -9,7 +9,7 @@ export function NotFoundPage() {
           404
         </h1>
         <p className="text-muted text-[16px] leading-relaxed max-w-[520px] mb-6">
-          That page doesn't exist — it may have moved, or never did.
+          That page doesn't exist. It may have moved, or never did.
         </p>
         <Link
           to="/"

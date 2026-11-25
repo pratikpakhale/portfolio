@@ -9,8 +9,9 @@
 
 export const SITE = {
   /**
-   * Canonical origin. `pakhale.com` 301s here (set in the Vercel project's
-   * domain settings) so the two names never compete for the same content.
+   * Canonical origin. `pakhale.com` and `www.pakhale.com` 308 here with the
+   * path intact (set in the Vercel project's domain settings), so the names
+   * never compete for the same content.
    */
   url: "https://pratik.pakhale.com",
   name: "Pratik Pakhale",
@@ -49,7 +50,7 @@ export const PAGES: PageMeta[] = [
   {
     path: "/work",
     label: "Work",
-    title: "Work — Pratik Pakhale",
+    title: "Work · Pratik Pakhale",
     description:
       "Where Pratik Pakhale has worked: founding engineer at Raccoon AI building browser-agent infrastructure, and EdTech research at IIT Bombay.",
     priority: 0.9,
@@ -58,25 +59,25 @@ export const PAGES: PageMeta[] = [
   {
     path: "/projects",
     label: "Projects",
-    title: "Projects Archive — Pratik Pakhale",
+    title: "Projects Archive · Pratik Pakhale",
     description:
-      "The full archive of things Pratik Pakhale has built — vibecoded tools like sitedrop and whispr, learning projects, and one-off experiments.",
+      "The full archive of things Pratik Pakhale has built: tools like bhumi, paste and sitedrop, Toot Together, and one-off experiments.",
     priority: 0.9,
     changefreq: "weekly",
   },
   {
     path: "/oss",
     label: "Open Source",
-    title: "Open Source — Pratik Pakhale",
+    title: "Open Source · Pratik Pakhale",
     description:
-      "Open source work by Pratik Pakhale: Google Summer of Code with the PEcAn Project as contributor and mentor, plus contributions to browser-use, cmux and college websites.",
+      "Open source work by Pratik Pakhale: Google Summer of Code with the PEcAn Project (SAGE and FieldActivity) as mentor and contributor, plus cmux and college websites.",
     priority: 0.8,
     changefreq: "monthly",
   },
   {
     path: "/research",
     label: "Research",
-    title: "Research Papers — Pratik Pakhale",
+    title: "Research Papers · Pratik Pakhale",
     description:
       "Peer-reviewed papers co-authored by Pratik Pakhale, published in Springer Proceedings in Mathematics & Statistics and IEEE Big Data.",
     priority: 0.8,
@@ -85,16 +86,16 @@ export const PAGES: PageMeta[] = [
   {
     path: "/hardware",
     label: "Hardware",
-    title: "Hardware & Builds — Pratik Pakhale",
+    title: "Hardware & Builds · Pratik Pakhale",
     description:
-      "Physical builds by Pratik Pakhale — an RC car, an LED room controller, a Raspberry Pi 500 dev box, and other things you can actually hold.",
+      "Physical builds by Pratik Pakhale: an RC car, an LED room controller, a Raspberry Pi 500 dev box, and other things you can actually hold.",
     priority: 0.7,
     changefreq: "monthly",
   },
   {
     path: "/sidequests",
     label: "Side Quests",
-    title: "Side Quests — Pratik Pakhale",
+    title: "Side Quests · Pratik Pakhale",
     description:
       "What Pratik Pakhale does outside the editor: president of Velocity Club at IIIT Dharwad, Postman Student Leader, and hackathon wins.",
     priority: 0.6,

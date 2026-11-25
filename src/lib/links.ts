@@ -29,6 +29,7 @@ export function destinations(proj: Project): Destination[] {
 
   if (proj.live) out.push({ icon: "globe", handle: handleFor(proj.live), url: proj.live });
   if (proj.repo) out.push({ icon: "github", handle: handleFor(proj.repo), url: proj.repo });
+  if (proj.video) out.push({ icon: "youtube", handle: "demo video", url: proj.video });
 
   return out;
 }

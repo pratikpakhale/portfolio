@@ -3,34 +3,13 @@ export interface Link {
   url: string;
 }
 
-export type BrandIconName =
-  | "github"
-  | "linkedin"
-  | "x"
-  | "file"
-  | "mail"
-  | "globe";
-
-export interface ProfileLink extends Link {
-  /** Which mark to show in the hover card. */
-  icon: BrandIconName;
-  /** Username, address, or filename shown next to the icon. */
-  handle: string;
-  /** Brand color for the icon and handle. Defaults to the site accent. */
-  color?: string;
-  /** Substitute used in dark mode, for marks that vanish on a dark ground. */
-  colorDark?: string;
-  /** Optional one-liner under the handle. */
-  note?: string;
-  /** Makes the note itself clickable. */
-  noteUrl?: string;
-}
+export type BrandIconName = "github" | "globe" | "youtube";
 
 export interface Profile {
   name: string;
   title: string;
   tagline: string;
-  links: ProfileLink[];
+  links: Link[];
 }
 
 export interface DiffLine {
@@ -43,6 +22,8 @@ export interface Position {
   date: string;
   title: string;
   company: string;
+  /** Lead line shown above the bullets. */
+  summary?: string;
   diff: DiffLine[];
   story?: string;
 }
@@ -53,34 +34,41 @@ export interface WorkData {
 }
 
 /**
- * Everything I've built lives in one list — side projects, vibecoded tools and
- * one-off jokes alike. `tag` is the chip on the card, `group` decides which
- * archive tab it lands under, and an item needs at least one of live/repo to
- * be linkable (a few of the older ones are neither, and render as plain text).
+ * Everything I've built lives in one list: side projects, vibecoded tools and
+ * one-off jokes alike. An item needs at least one of live/repo to be linkable
+ * (a few of the older ones are neither, and render as plain text).
  */
+export interface Stat {
+  label: string;
+  value: string;
+  /** Field of the project's `statsUrl` response that replaces `value` once it loads. */
+  key?: string;
+}
+
 export interface Project {
   name: string;
   /** Hosted URL, when the thing is running somewhere. */
   live?: string;
   /** Source repository, when it's public. */
   repo?: string;
+  /** Demo video. */
+  video?: string;
   year?: string;
-  tag: string;
-  group: string;
+  /** Shown under highlights, and on the homepage grid unless it's an autopilot app. */
   featured?: boolean;
+  /** Runs itself; listed in the homepage's Autopilot section. */
+  autopilot?: boolean;
   description: string;
   image: string | null;
   story?: string;
-}
-
-export interface ProjectGroup {
-  key: string;
-  title: string;
+  stats?: Stat[];
+  /** Endpoint returning live numbers for `stats`; `value` is the prerendered fallback. */
+  statsUrl?: string;
 }
 
 export interface ProjectsData {
   bridge: string;
-  groups: ProjectGroup[];
+  autopilotBridge: string;
   items: Project[];
 }
 
@@ -124,6 +112,7 @@ export interface OssItem {
   name: string;
   url: string | null;
   role: string;
+  links?: Link[];
 }
 
 export interface OssData {

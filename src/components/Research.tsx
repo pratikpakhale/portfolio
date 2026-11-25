@@ -38,7 +38,7 @@ export function Research() {
     <>
       <Bridge html={research.bridge} />
       <section id="research" className="py-6 pb-18">
-        <SectionHeader num="05" title="Research" />
+        <SectionHeader num="06" title="Research" />
         <div>
           {visible.map((paper, i) => (
             <PaperItem

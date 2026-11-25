@@ -2,7 +2,7 @@ bridge: "Sometimes those tools are things <em>I can hold</em>."
 
 builds:
   - name: "RC Car"
-    description: "Remote-controlled car — motors, circuits, and way too much soldering."
+    description: "Remote-controlled car: motors, circuits, and way too much soldering."
     image: null
     video: "/hardware/rc-car.mp4"
     thumbnail: "/hardware/rc-car-thumb.jpg"

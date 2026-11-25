@@ -21,6 +21,19 @@ export function OssRow({ item, className }: { item: OssItemType; className?: str
         )}
       </div>
       <div className="text-[14px] text-muted mt-0.5">{item.role}</div>
+      {item.links && (
+        <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1">
+          {item.links.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              className="font-mono text-[12px] text-dim border-none hover:text-accent transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </FadeIn>
   );
 }

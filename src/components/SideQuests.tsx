@@ -29,7 +29,7 @@ export function SideQuests() {
     <>
       <Bridge html={sidequests.bridge} />
       <section id="sidequests" className="py-6 pb-18">
-        <SectionHeader num="06" title="Side quests" />
+        <SectionHeader num="07" title="Side quests" />
         <div className="text-[16px] leading-[2.2]">
           {sidequests.items.map((item, i) => (
             <SideQuestRow

@@ -3,6 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Work } from "@/components/Work";
 import { Projects } from "@/components/Projects";
+import { Autopilot } from "@/components/Autopilot";
 import { Research } from "@/components/Research";
 import { Hardware } from "@/components/Hardware";
 import { SideQuests } from "@/components/SideQuests";
@@ -23,6 +24,7 @@ export default function App() {
       <Work />
       <Oss />
       <Projects />
+      <Autopilot />
       <Hardware />
       <Research />
       <SideQuests />

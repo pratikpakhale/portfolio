@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { FadeIn } from "./FadeIn";
-import { LinkWithPreview } from "./LinkWithPreview";
 import { profile } from "@/lib/data";
 
 export function Hero() {
@@ -15,11 +14,13 @@ export function Hero() {
       </FadeIn>
       <FadeIn className="mt-7 flex flex-wrap gap-x-[18px] gap-y-2.5 font-mono text-[14px]">
         {profile.links.map((link) => (
-          <LinkWithPreview
+          <a
             key={link.label}
-            link={link}
+            href={link.url}
             className="text-dim border-b border-border hover:text-accent hover:border-accent transition-colors"
-          />
+          >
+            {link.label}
+          </a>
         ))}
 
         <span aria-hidden className="text-border select-none">/</span>

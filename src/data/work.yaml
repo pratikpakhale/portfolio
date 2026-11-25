@@ -2,18 +2,15 @@ bridge: "The last couple of years I've been <em>building products</em> at places
 
 positions:
   - hash: "HEAD"
-    date: "Dec 2024 — present"
+    date: "Dec 2024 – present"
     title: "Founding Engineer"
     company: "Raccoon AI"
+    summary: "Shipping across the whole stack: frontend, agents and backend infra."
     diff:
       - type: plus
-        text: "Shipped Elemetry, a cache engine that stores browser actions in an in-memory vector graph database, leveraging browsing history to accelerate repetitive tasks"
+        text: "Agents: Elemetry, a cache engine that replays past browsing from an in-memory vector graph, and the real-time pipeline that streams agent work to the UI"
       - type: plus
-        text: "Designed dual-model (ephemeral events vs. persisted blocks) real-time streaming pipeline for frontend rendering of realtime agentic work"
-      - type: plus
-        text: "Built a text-to-video motion-graphics system with a React rendering engine, director's-board approval flow, parallelized frame-by-frame export on serverless GPUs, and a full audio toolkit"
-      - type: plus
-        text: "Also shipped canvas editor, raccoon-inspector, worked heavily on chat app's state management and performance"
+        text: "Product: a text-to-video motion-graphics system that renders on serverless GPUs, the canvas editor, raccoon-inspector, and the chat app's state and performance"
     story: >
       Joined as an intern, now founding engineer. Raccoon builds browser agents that remember what you
       did yesterday and skip the repetitive clicks today. I worked on Elemetry: a cache engine that
@@ -22,21 +19,21 @@ positions:
       to capture intent rather than just actions.
 
   - hash: "a7f3e2d"
-    date: "Jul 2023 — Dec 2024"
+    date: "Jul 2023 – Dec 2024"
     title: "Research Intern"
     company: "IIT Bombay · EdTech Research"
     diff:
       - type: plus
         text: "Built adaptive learning system with video bots for student engagement"
       - type: plus
-        text: "Implemented feedback platform — React, Express, Flask running deep learning model"
+        text: "Implemented feedback platform: React, Express, Flask running deep learning model"
       - type: plus
         text: "Shipped as Docker container and Electron app for offline use"
       - type: plus
-        text: "Lead backend developer on GeoGuru — LMS with geographical information system"
+        text: "Lead backend developer on GeoGuru, an LMS with geographical information system"
     story: >
       Started as a summer research intern and stayed on. The affect-aware system uses video bots that
-      adapt based on how engaged students are — the deep learning model runs on Flask and feeds back
+      adapt based on how engaged students are. The deep learning model runs on Flask and feeds back
       into the React frontend in real time. GeoGuru took longer: a full LMS that integrates QGIS for
       spatial data. I work on the backend architecture, which has to handle concurrent map rendering
       sessions.

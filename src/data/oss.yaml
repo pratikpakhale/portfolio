@@ -1,13 +1,19 @@
 bridge: "Along the way, I <em>build for communities</em> I'm part of."
 
 items:
-  - name: "Google Summer of Code — PEcAn Project (Mentor)"
-    url: "https://summerofcode.withgoogle.com/programs/2026/projects/9N3lJpwq"
-    role: "Mentoring a GSoC project on LLM-assisted extraction of agronomic and ecological experiments into structured data."
+  - name: "PecanProject/sage"
+    url: "https://github.com/PecanProject/sage"
+    role: "Mentoring it as a Google Summer of Code 2026 project: extracting agronomy and ecology experiments from papers into structured records, with every value traced back to its source on the PDF."
+    links:
+      - label: "GSoC 2026 project"
+        url: "https://summerofcode.withgoogle.com/programs/2026/projects/9N3lJpwq"
 
-  - name: "Google Summer of Code — PEcAn Project"
-    url: "https://summerofcode.withgoogle.com/programs/2024/projects/tsyopiTU"
-    role: "Integrated JSON schema parser into FieldActivity R Shiny app. Reworked data structures for complex management scenarios."
+  - name: "PecanProject/fieldactivity"
+    url: "https://github.com/PecanProject/fieldactivity"
+    role: "Google Summer of Code 2024 contributor. Integrated a JSON schema parser into the FieldActivity R Shiny app and reworked its data structures for complex management scenarios."
+    links:
+      - label: "GSoC 2024 project"
+        url: "https://summerofcode.withgoogle.com/programs/2024/projects/tsyopiTU"
 
   - name: "manaflow-ai/cmux"
     url: "https://github.com/manaflow-ai/cmux/"
@@ -17,14 +23,6 @@ items:
     url: "https://iiitdwd.ac.in"
     role: "Led a team of 15 building the official college website. Next.js Turborepo, CI/CD on cPanel. Base version shipped in 10 days."
 
-  - name: "IIIT Dharwad Conclave"
-    url: "https://conclave.iiitdwd.ac.in"
-    role: "Built and shipped the site for the college conclave."
-
   - name: "Basaveshwar Engineering College Website"
     url: "https://becbgk.edu"
     role: "Built the official college website."
-
-  - name: "browser-use/browser-use"
-    url: "https://github.com/browser-use/browser-use"
-    role: "Fixed a bug"

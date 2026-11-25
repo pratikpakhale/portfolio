@@ -1,105 +1,104 @@
-bridge: "On my own time, I build <em>tools I wish existed</em> — some to learn, some to scratch an itch, some just for fun."
+bridge: "On my own time, I build <em>tools I wish existed</em>: some to learn, some to scratch an itch, some just for fun."
 
-# Tabs on /projects, in this order.
-groups:
-  - key: "vibecoded"
-    title: "vibecoded"
+# Lead-in for the homepage's Autopilot section, which lists the `autopilot` items.
+autopilotBridge: "A few of them I've handed to agents, and now they <em>run themselves</em>."
 
-  - key: "learning"
-    title: "learning"
-
-  - key: "fun"
-    title: "fun"
-
-# `tag` is the chip on the card; `group` is the tab it lands under.
-# `featured` promotes it to the homepage grid.
+# `featured` puts it under highlights, and on the homepage grid unless it's an
+# `autopilot` item, which gets its own section.
 items:
+  - name: "Toot Together"
+    live: "https://toottogether.fun"
+    year: "2026"
+    featured: true
+    autopilot: true
+    description: "Co-op hippo raft party game for phones and laptops. Every morning an agent reads the analytics and server logs, retunes the rivers crews keep dying on, and ships the fix."
+    image: "/projects/toot-together.jpg"
+    statsUrl: "/api/toot-together-stats"
+    stats:
+      - { key: "players", value: "3,479", label: "players" }
+      - { key: "countries", value: "125", label: "countries" }
+
+  - name: "bhumi"
+    live: "https://bhumi.pakhale.com"
+    repo: "https://github.com/pratikpakhale/bhumi"
+    year: "2026"
+    featured: true
+    description: "A fast client for Maharashtra's land records."
+    image: null
+
+  - name: "IIIT Dharwad Website"
+    live: "https://iiitdwd.ac.in"
+    repo: "https://github.com/Velocity-IIITDWD/iiitdwd"
+    year: "2025"
+    featured: true
+    description: "The official college website. Led a team of 15, shipped in 10 days."
+    image: null
+
+  - name: "paste"
+    live: "https://paste.pakhale.com"
+    repo: "https://github.com/pratikpakhale/paste"
+    year: "2026"
+    featured: true
+    description: "A local clipboard for everything you paste. Offline and private."
+    image: null
+
   - name: "sitedrop"
     live: "https://site.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
-    featured: true
     description: "Netlify Drop, but personal. My agents deploy quick static sites to it all day"
-    image: null
-
-  - name: "shadcn registry browser"
-    live: "https://shadcn.pakhale.com"
-    year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
-    featured: true
-    description: "Browse multiple UI component registries in one place. Auto updated from ShadCN registry"
     image: null
 
   - name: "pdf"
     live: "https://pdf.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
-    featured: true
     description: "PDF toolkit that runs entirely in the browser."
     image: null
 
   - name: "pakhale"
     repo: "https://github.com/pratikpakhale/pakhale"
     year: "2026"
-    tag: "cli"
-    group: "vibecoded"
-    featured: true
-    description: "npx pakhale setup agents — keeps my coding agents (Claude Code, opencode) configured identically on every machine, from one command"
+    description: "npx pakhale setup agents keeps my coding agents (Claude Code, opencode) configured identically on every machine, from one command"
     image: null
 
   - name: "whispr"
     live: "https://whispr.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
     description: "Safe, secure, private chats."
     image: null
 
   - name: "txt"
     live: "https://txt.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
     description: "End-to-end encrypted online notepad"
     image: null
 
   - name: "diffs"
     live: "https://diffs.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
     description: "Paste two texts, see the diff instantly."
     image: null
 
   - name: "jsonl"
     live: "https://jsonl.pakhale.com"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
-    description: "Fast JSONL viewer — table & json views, search, keyboard nav."
+    description: "Fast JSONL viewer: table & json views, search, keyboard nav."
     image: null
 
   - name: "draw"
     live: "https://draw.pakhale.com"
     repo: "https://github.com/pratikpakhale/draw"
     year: "2026"
-    tag: "vibecoded"
-    group: "vibecoded"
-    description: "Excalidraw whiteboard that remembers — boards, pages, and read-only share links."
+    description: "Excalidraw whiteboard that remembers: boards, pages, and read-only share links."
     image: null
 
   - name: "Rewind"
     repo: "https://github.com/ascend-tech/rewind"
+    video: "https://www.youtube.com/watch?v=gna01G1rxFA"
     year: "2022"
-    tag: "ai/fullstack"
-    group: "learning"
-    description: "Social media platform for music lovers with a voice bot that understands intent — play songs, search users, create posts."
+    description: "A social network for music, with a voice bot."
     image: null
     story: >
-      What if a social media platform was built entirely around music? Not just sharing songs —
+      What if a social media platform was built entirely around music? Not just sharing songs, but
       actually understanding what you're saying. We built a voice bot that listens to natural language
       and takes actions: play a song, search a user, create a post. Wiring up OpenAI was
       straightforward; making it feel natural took most of the time.
@@ -107,21 +106,19 @@ items:
   - name: "Velocity Events"
     repo: "https://github.com/pratikpakhale/velocity-event-management"
     year: "2022"
-    tag: "mern"
-    group: "learning"
     featured: true
-    description: "Event management platform for college clubs — registration to ticketing. 125k+ API calls and counting."
+    description: "Event platform for college clubs."
     image: null
+    stats:
+      - { value: "125k+", label: "API calls" }
     story: >
       Built this because our college club needed a real event platform, not Google Forms. Registration,
-      ticketing, check-in — the whole flow. It's handled 125k+ API calls so far, and keeping it up
+      ticketing, check-in: the whole flow. It's handled 125k+ API calls so far, and keeping it up
       taught me a lot about production reliability.
 
   - name: "vChar"
     repo: "https://github.com/pratikpakhale/vchar"
     year: "2024"
-    tag: "llm/rag"
-    group: "learning"
     description: "AI researcher that runs parallel web searches, ranks results by relevance, and summarizes with citations."
     image: null
     story: >
@@ -130,47 +127,9 @@ items:
       ranking results across multiple search engines, since they tend to converge on the same handful
       of SEO-tuned pages.
 
-  - name: "Browser as an API"
-    repo: "https://github.com/pratikpakhale/browser"
-    year: "2024"
-    tag: "typescript"
-    group: "learning"
-    description: "Playwright-powered browser control as an API. Semaphoric page/window management for low-latency auto-scaling."
-    image: null
-    story: >
-      Needed programmatic browser control without the cold-start tax. It came down to semaphoric
-      page/window management — pre-warmed browser contexts that auto-scale based on demand. That's
-      most of the gap between a 2-second and a 200ms API call.
-
-  - name: "Terravis"
-    repo: "https://github.com/pratikpakhale/terravis"
-    year: "2024"
-    tag: "ai/gis"
-    group: "learning"
-    description: "Voice-guided GIS system running entirely offline. Whisper.cpp + Llama.cpp + QGIS."
-    image: null
-    story: >
-      Built this during the IIT Bombay research. Wanted to see if you could navigate a map using
-      just your voice, running inference locally. Whisper.cpp for speech-to-text, Llama.cpp for
-      understanding intent, and QGIS for the map. The whole thing runs offline on commodity hardware.
-
-  - name: "KMB for Steiner Trees"
-    repo: "https://github.com/pratikpakhale/kmb-cpu"
-    year: "2024"
-    tag: "c++/python"
-    group: "learning"
-    description: "KMB algorithm for Steiner Tree Problem. Parallelized with OpenMP for faster computation."
-    image: null
-    story: >
-      An implementation of the KMB approximation algorithm for the Steiner Tree Problem.
-      The interesting part was using OpenMP to parallelize the shortest-path computations —
-      graph problems don't parallelize cleanly.
-
   - name: "Tweemarks"
     repo: "https://github.com/pratikpakhale/tweemarks-v2"
     year: "2022"
-    tag: "js/firebase"
-    group: "learning"
     description: "Twitter bookmarking tool with a Telegram bot. Save tweets, access anywhere. Taken down when Twitter API pricing changed."
     image: null
     story: >
@@ -178,27 +137,10 @@ items:
       Tweemarks with a Telegram bot that lets you forward tweets and they get saved with tags.
       Had real users until Twitter killed free API access. RIP.
 
-  - name: "Secret Chats"
-    repo: "https://github.com/pratikpakhale/secret-chats"
-    year: "2022"
-    tag: "react/firebase"
-    group: "learning"
-    description: "Anonymous chat app tied to your device — no accounts, no history, just chaos on Firebase Realtime."
-    image: null
-    story: >
-      No sign-up, no login, no history. Your device IS your identity. Built on Firebase Realtime
-      so messages appear instantly. The fun part was making it truly anonymous while still preventing
-      abuse — turns out device fingerprinting is a rabbit hole.
-
   - name: "uhmegle"
-    tag: "fun"
-    group: "fun"
-    featured: true
-    description: "Omegle MITM — proxy that lets you spy on what two random strangers are talking about. \"For education\"."
+    description: "Omegle MITM: a proxy that lets you spy on what two random strangers are talking about. \"For education\"."
     image: null
 
   - name: "Clash of CSS"
-    tag: "fun"
-    group: "fun"
     description: "CSS Battles but better, faster and for college events :)"
     image: null

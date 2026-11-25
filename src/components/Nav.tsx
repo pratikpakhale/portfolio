@@ -4,9 +4,10 @@ const links = [
   { href: "#work", num: "01", label: "work" },
   { href: "#oss", num: "02", label: "oss" },
   { href: "#projects", num: "03", label: "projects" },
-  { href: "#hardware", num: "04", label: "hardware" },
-  { href: "#research", num: "05", label: "research" },
-  { href: "#sidequests", num: "06", label: "side quests" },
+  { href: "#autopilot", num: "04", label: "autopilot" },
+  { href: "#hardware", num: "05", label: "hardware" },
+  { href: "#research", num: "06", label: "research" },
+  { href: "#sidequests", num: "07", label: "side quests" },
 ];
 
 const sectionIds = links.map((l) => l.href.slice(1));

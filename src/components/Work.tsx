@@ -22,6 +22,9 @@ export function WorkPosition({ pos, className }: { pos: Position; className?: st
       <div className="text-muted font-sans text-sm mt-0.5">
         {pos.company}
       </div>
+      {pos.summary && (
+        <p className="mt-3 font-sans text-sm text-text leading-relaxed">{pos.summary}</p>
+      )}
       <div className="mt-3 space-y-1">
         {pos.diff.map((line, j) => (
           <div

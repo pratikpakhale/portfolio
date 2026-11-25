@@ -105,7 +105,7 @@ export function Hardware() {
     <>
       <Bridge html={hardware.bridge} />
       <section id="hardware" className="py-6 pb-18">
-        <SectionHeader num="04" title="Hardware & builds" />
+        <SectionHeader num="05" title="Hardware & builds" />
         <div className="grid grid-cols-2 gap-3.5 max-sm:grid-cols-1">
           {hardware.builds.map((build) => (
             <BuildCard key={build.name} build={build} />

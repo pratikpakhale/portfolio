@@ -18,7 +18,7 @@ const WEBSITE_ID = `${SITE.url}/#website`;
 const currentPosition =
   work.positions.find((p) => /present/i.test(p.date)) ?? work.positions[0];
 
-/** Profile links that point at a real profile elsewhere — mailto and the local PDF don't count. */
+/** Profile links that point at a real profile elsewhere: mailto and the local PDF don't count. */
 const sameAs = profile.links
   .filter((l) => /^https?:/.test(l.url))
   .map((l) => l.url);
@@ -30,7 +30,7 @@ const person: Node = {
   url: SITE.url,
   jobTitle: currentPosition.title,
   description: profile.tagline,
-  email: profile.links.find((l) => l.icon === "mail")?.url,
+  email: profile.links.find((l) => l.url.startsWith("mailto:"))?.url,
   image: absolute(SITE.ogImage),
   sameAs,
   worksFor: {

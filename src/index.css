@@ -93,18 +93,6 @@
   }
 }
 
-/* Platform brand color, with a dark-mode substitute for marks that
-   disappear on a dark ground (GitHub's black, mainly). */
-.brand,
-.brand:hover {
-  color: var(--brand, var(--color-accent));
-}
-
-.dark .brand,
-.dark .brand:hover {
-  color: var(--brand-dark, var(--brand, var(--color-accent)));
-}
-
 /* Fade in animation */
 @media (prefers-reduced-motion: no-preference) {
   .fade-in {

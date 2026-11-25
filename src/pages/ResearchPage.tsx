@@ -8,7 +8,7 @@ export function ResearchPage() {
   return (
     <PageLayout path="/research">
       <section className="py-6 pb-18">
-        <SectionHeader num="05" title="Research" level={1} />
+        <SectionHeader num="06" title="Research" level={1} />
         <FadeIn className="text-muted text-[16px] leading-relaxed -mt-4 mb-8 max-w-[600px] font-sans">
           <p dangerouslySetInnerHTML={{ __html: research.bridge }} />
         </FadeIn>
